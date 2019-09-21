@@ -1,0 +1,18 @@
+{
+  "name": "telegram-vanilla-dark-desktop",
+  "version": "0.0.0",
+  "description": "Dark theme for desktop telegram app",
+  "author": "VChet",
+  "license": "CC-BY-SA-4.0",
+  "homepage": "https://github.com/VChet/Telegram-Vanilla-Dark-Desktop#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VChet/Telegram-Vanilla-Dark-Desktop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/issues"
+  },
+    "scripts": {
+      "replace": "node replaceColors.js"
+    }
+}
