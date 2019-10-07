@@ -3,11 +3,11 @@
   <a href="https://t.me/addtheme/vanilla_dark_cream">
     <img src="https://img.shields.io/badge/install-theme-green.svg" alt="install theme">
   </a>
+  <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/tags">
+    <img src="https://img.shields.io/github/tag/VChet/Telegram-Vanilla-Dark-Desktop.svg?label=version" alt="Version">
+  </a>
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
-  </a>
-  <a href="https://saythanks.io/to/VChet">
-    <img src="https://img.shields.io/badge/say-thanks-B9B384.svg" alt="say thanks">
   </a>
 </p>
 
