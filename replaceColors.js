@@ -19,6 +19,7 @@ const theme = {
 const mappings = {
   windowBg: "GRAY",
   windowBgOver: "GRAY_LIGHT",
+  windowBgRipple: "GRAY_SELECTION",
   lightButtonBg: "GRAY",
   lightButtonBgOver: "GRAY_LIGHT",
   outlineButtonBgOver: "GRAY_LIGHT",
