@@ -2,7 +2,8 @@
 
 const fs = require("fs");
 
-const paletteFile = "vanilla-dark-cream.tdesktop-palette";
+const paletteFile = "vanilla-dark-cream";
+
 const theme = {
   "MAIN_DARK": "#908B67",
   "MAIN": "#B9B384",
@@ -86,7 +87,7 @@ const mappings = {
   botKbBg: "GRAY_LIGHT",
 };
 
-fs.readFile(paletteFile, "utf8", function(error, data) {
+fs.readFile(`${paletteFile}_original.tdesktop-palette`, "utf8", function(error, data) {
   if (error) return console.log(error);
 
   const lines = data.split("\n").map(line => {
@@ -101,7 +102,7 @@ fs.readFile(paletteFile, "utf8", function(error, data) {
   const themeString = Object.entries(theme).map(line => line.join(": ")).join(";\n") + ";";
 
   const result = lines.join("\n").replace("{{THEME}}", themeString);
-  fs.writeFile(paletteFile, result, "utf8", error => {
+  fs.writeFile(`${paletteFile}.tdesktop-palette`, result, "utf8", error => {
     if (error) return console.log(error);
   });
 });
