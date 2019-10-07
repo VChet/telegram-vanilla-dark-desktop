@@ -30,6 +30,8 @@ const mappings = {
   filterInputBorderFg: "GRAY_LIGHT",
   filterInputInactiveBg: "GRAY_LIGHT",
   titleBg: "GRAY_LIGHT",
+  trayCounterBg: "MAIN",
+  trayCounterBgMute: "MAIN_DARK",
   trayCounterFg: "GRAY_DARK",
   trayCounterBgMacInvert: "GRAY_DARK",
   trayCounterFgMacInvert: "GRAY_DARK_TP",

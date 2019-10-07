@@ -98,8 +98,8 @@ titleButtonCloseBgActiveOver: titleButtonCloseBgOver; // custom window title clo
 titleButtonCloseFgActiveOver: titleButtonCloseFgOver; // custom window title close button icon with mouse over when window is active (Windows only)
 titleFg: #666666; // custom window title text when window is inactive (macOS only)
 titleFgActive: #808080; // custom window title text when window is active (macOS only)
-trayCounterBg: #f23c34; // tray icon counter background
-trayCounterBgMute: #888888; // tray icon counter background if all unread messages are muted
+trayCounterBg: MAIN; // tray icon counter background
+trayCounterBgMute: MAIN_DARK; // tray icon counter background if all unread messages are muted
 trayCounterFg: GRAY_DARK; // tray icon counter text
 trayCounterBgMacInvert: GRAY_DARK; // tray icon counter background when tray icon is pressed or when dark theme of macOS is used (macOS only)
 trayCounterFgMacInvert: GRAY_DARK_TP; // tray icon counter text when tray icon is pressed or when dark theme of macOS is used (macOS only)
