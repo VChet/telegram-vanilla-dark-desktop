@@ -150,8 +150,8 @@ dialogsVerifiedIconBg: #eae5aa; // chat list verified icon background
 dialogsVerifiedIconFg: GRAY; // chat list verified icon check
 dialogsSendingIconFg: #727272; // chat list sending message icon (clock)
 dialogsSentIconFg: #ebe495; // chat list sent message tick / double tick icon
-dialogsUnreadBg: #99945a; // chat list unread badge background for not muted chat
-dialogsUnreadBgMuted: MAIN; // chat list unread badge background for muted chat
+dialogsUnreadBg: MAIN; // chat list unread badge background for not muted chat
+dialogsUnreadBgMuted: MAIN_DARK; // chat list unread badge background for muted chat
 dialogsUnreadFg: GRAY_DARK; // chat list unread badge text
 dialogsOnlineBadgeFg: #e3dc87; // chat list online status
 dialogsBgOver: GRAY_LIGHT; // chat list background with mouse over
