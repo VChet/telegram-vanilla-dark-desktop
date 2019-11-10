@@ -14,5 +14,8 @@
   },
   "scripts": {
     "replace": "node replaceColors.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0"
   }
 }
