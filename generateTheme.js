@@ -4,10 +4,10 @@ const fs = require("fs");
 const chalk = require("chalk");
 
 const themes = {
-  // aqua: "./themes/aqua.json",
+  aqua: "./themes/aqua.json",
   cream: "./themes/cream.json",
-  // green: "./themes/green.json",
-  // red: "./themes/red.json",
+  green: "./themes/green.json",
+  red: "./themes/red.json",
 };
 
 let themeName = process.argv[2];
