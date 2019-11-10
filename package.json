@@ -13,7 +13,7 @@
     "url": "https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/issues"
   },
   "scripts": {
-    "replace": "node replaceColors.js"
+    "generate": "node generateTheme.js"
   },
   "dependencies": {
     "chalk": "^3.0.0"
