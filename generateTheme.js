@@ -3,7 +3,7 @@
 const fs = require("fs");
 const chalk = require("chalk");
 
-const paletteFile = "vanilla-dark-cream";
+const paletteFile = "vanilla-dark";
 
 const themes = {
   // aqua: "./themes/aqua.json",
@@ -12,15 +12,13 @@ const themes = {
   // red: "./themes/red.json",
 };
 
-let theme;
-if (themes[process.argv[2]]) {
-  theme = require(themes[process.argv[2]]);
-} else {
-  theme = require(themes["cream"]);
-  console.log(chalk.yellow("Theme name wasn't specified. Generating `Cream` theme."));
+let themeName = process.argv[2];
+if (!themes[themeName]) {
+  themeName = "cream";
+  console.log(chalk.yellow("Theme name wasn't specified or was incorrect. Generating `Cream` theme."));
   console.log(chalk.yellow(`Available themes: ${Object.keys(themes)}`));
-  return;
 }
+const theme = require(themes[themeName]);
 
 const mappings = {
   windowBg: "GRAY",
@@ -110,7 +108,7 @@ fs.readFile(`${paletteFile}_original.tdesktop-palette`, "utf8", function(error, 
   const themeString = Object.entries(theme).map(line => line.join(": ")).join(";\n") + ";";
 
   const result = lines.join("\n").replace("{{THEME}}", themeString);
-  fs.writeFile(`${paletteFile}.tdesktop-palette`, result, "utf8", error => {
+  fs.writeFile(`${paletteFile}_${themeName}.tdesktop-palette`, result, "utf8", error => {
     if (error) return console.log(error);
   });
 });
