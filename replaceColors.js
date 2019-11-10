@@ -5,18 +5,22 @@ const chalk = require("chalk");
 
 const paletteFile = "vanilla-dark-cream";
 
-const theme = {
-  "MAIN_DARK": "#908B67",
-  "MAIN": "#B9B384",
-  "MAIN_LIGHT": "#D0CA94",
-  "GRAY_DARK": "#191919",
-  "GRAY_DARK_TP": "#19191901",
-  "GRAY": "#222222",
-  "GRAY_LIGHT": "#272727",
-  "GRAY_SELECTION": "#2C2C2C",
-  "TEXT": "#959595",
-  "LIGHT": "#AAAAAA",
+const themes = {
+  // aqua: "./themes/aqua.json",
+  cream: "./themes/cream.json",
+  // green: "./themes/green.json",
+  // red: "./themes/red.json",
 };
+
+let theme;
+if (themes[process.argv[2]]) {
+  theme = require(themes[process.argv[2]]);
+} else {
+  theme = require(themes["cream"]);
+  console.log(chalk.yellow("Theme name wasn't specified. Generating `Cream` theme."));
+  console.log(chalk.yellow(`Available themes: ${Object.keys(themes)}`));
+  return;
+}
 
 const mappings = {
   windowBg: "GRAY",
