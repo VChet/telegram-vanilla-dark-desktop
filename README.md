@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="logo" src="https://raw.githubusercontent.com/VChet/Telegram-Vanilla-Dark/master/images/logo.png" width="580"><br/>
+  <img alt="logo" src="https://raw.githubusercontent.com/VChet/Telegram-Vanilla-Dark-Web/master/images/logo.png" width="580"><br/>
   <a href="https://t.me/addtheme/vanilla_dark_cream">
     <img src="https://img.shields.io/badge/install-theme-green.svg" alt="install theme">
   </a>
@@ -11,7 +11,7 @@
   </a>
 </p>
 
-**[This theme for Telegram Web](https://github.com/VChet/Telegram-Vanilla-Dark)**
+**[This theme for Telegram Web](https://github.com/VChet/Telegram-Vanilla-Dark-Web)**
 
 ## Development
 1. [Fork](https://github.com/VChet/Telegram-Vanilla-Dark/fork) and download this repository.
