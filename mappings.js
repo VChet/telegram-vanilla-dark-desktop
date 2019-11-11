@@ -87,4 +87,5 @@ exports.mappings = {
   mainMenuCoverBg: "MAIN_DARK",
   filterInputActiveBg: "GRAY_LIGHT",
   botKbBg: "GRAY_LIGHT",
+  emojiIconFgActive: "MAIN"
 }
