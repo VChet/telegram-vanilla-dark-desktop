@@ -53,6 +53,8 @@ exports.mappings = {
   historyLinkInFgSelected: "MAIN_LIGHT",
   historyLinkOutFg: "historyLinkInFg",
   historyUnreadBarBg: "GRAY_LIGHT",
+  historyOutIconFg: "MAIN",
+  historyIconFgInverted: "historyOutIconFg",
   msgInBg: "GRAY_LIGHT",
   msgOutBg: "msgInBg",
   msgInBgSelected: "MAIN_OVERLAY",
