@@ -47,7 +47,7 @@ exports.mappings = {
   emojiPanCategories: "GRAY",
   historyTextInFg: "LIGHT",
   historyTextInFgSelected: "historyTextInFg",
-  historyTextOutFg: "LIGHT",
+  historyTextOutFg: "historyTextInFg",
   historyTextOutFgSelected: "historyTextInFgSelected",
   historyLinkInFg: "MAIN",
   historyLinkInFgSelected: "MAIN_LIGHT",
