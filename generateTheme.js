@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 const chalk = require("chalk");
+const { version } = require('./package.json');
 
 const themes = {
   aqua: "./themes/aqua.json",
@@ -35,7 +36,8 @@ fs.readFile(`${paletteFile}_original.tdesktop-palette`, "utf8", function(error, 
 
   const themeString = Object.entries(theme).map(line => line.join(": ")).join(";\n") + ";";
 
-  const result = lines.join("\n").replace("{{THEME}}", themeString);
+  let result = `// Telegram Vanilla Dark (${themeName}) ${version}\n`;
+  result += lines.join("\n").replace("{{THEME}}", themeString);
   fs.writeFile(`${paletteFile}_${themeName}.tdesktop-palette`, result, "utf8", error => {
     if (error) return console.log(error);
   });
