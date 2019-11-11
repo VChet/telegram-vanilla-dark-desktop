@@ -1,5 +1,7 @@
+// Telegram Vanilla Dark (green) 0.3.0
 MAIN_DARK: #4B8B60;
 MAIN: #63B97F;
+MAIN_OVERLAY: #63B97F4C;
 MAIN_LIGHT: #7AD08F;
 GRAY_DARK: #19191A;
 GRAY_DARK_TP: #19191A01;
@@ -18,9 +20,9 @@ windowSubTextFg: #82868a; // gray: fallback for additional text
 windowSubTextFgOver: #797b7f; // darker gray: fallback for additional text with mouse over
 windowBoldFg: #e9e8e8; // dark gray: fallback for bold text
 windowBoldFgOver: #e9e9e9; // dark gray: fallback for bold text with mouse over
-windowBgActive: #b9b384; // bright blue: fallback for blue filled active areas
+windowBgActive: MAIN_DARK; // bright blue: fallback for blue filled active areas
 windowFgActive: #ffffff; // white: fallback for text on active areas
-windowActiveTextFg: #ddd29f; // online blue: fallback for active text like online status
+windowActiveTextFg: MAIN; // online blue: fallback for active text like online status
 windowShadowFg: #000000; // black: fallback for shadow
 windowShadowFgFallback: windowBg; // gray: fallback for shadow without opacity
 shadowFg: #00000018; // most shadows (including opacity)
@@ -28,19 +30,19 @@ slideFadeOutBg: #0000003c; // slide animation (chat to profile) fade out filling
 slideFadeOutShadowFg: windowShadowFg; // slide animation (chat to profile) fade out right section shadow
 imageBg: #000000; // image background fallback (when photo size is less than minimum allowed)
 imageBgTransparent: #ffffff; // image background when displaying an image with opacity where no opacity is needed
-activeButtonBg: #9a956b; // default active button background
-activeButtonBgOver: #a19b72; // default active button background with mouse over
-activeButtonBgRipple: #b0aa80; // default active button ripple effect
+activeButtonBg: MAIN_DARK; // default active button background
+activeButtonBgOver: MAIN; // default active button background with mouse over
+activeButtonBgRipple: MAIN_LIGHT; // default active button ripple effect
 activeButtonFg: #ffffff; // default active button text
 activeButtonFgOver: #ffffff; // default active button text with mouse over
-activeButtonSecondaryFg: #e0dcbd; // default active button additional text (selected messages counter in forward / delete buttons)
+activeButtonSecondaryFg: #FFFFFF; // default active button additional text (selected messages counter in forward / delete buttons)
 activeButtonSecondaryFgOver: activeButtonSecondaryFg; // default active button additional text with mouse over
 activeLineFg: #ded59a; // default active line (like code input field bottom border when you log in and field is focused)
 activeLineFgError: #f57878; // default active line for error state (like code input field bottom border when you log in and you've entered incorrect code)
 lightButtonBg: GRAY; // default light button background (like buttons in boxes)
 lightButtonBgOver: GRAY_LIGHT; // default light button background with mouse over
 lightButtonBgRipple: #3c474f; // default light button ripple effect
-lightButtonFg: #e5e0b7; // default light button text
+lightButtonFg: LIGHT; // default light button text
 lightButtonFgOver: lightButtonFg; // default light button text with mouse over
 attentionButtonFg: #f57474; // default attention button text (like confirm button on log out)
 attentionButtonFgOver: #e76060; // default attention button text with mouse over
@@ -149,7 +151,7 @@ dialogsDraftFg: #ec6657; // chat list draft label
 dialogsVerifiedIconBg: #eae5aa; // chat list verified icon background
 dialogsVerifiedIconFg: GRAY; // chat list verified icon check
 dialogsSendingIconFg: #727272; // chat list sending message icon (clock)
-dialogsSentIconFg: #ebe495; // chat list sent message tick / double tick icon
+dialogsSentIconFg: MAIN; // chat list sent message tick / double tick icon
 dialogsUnreadBg: MAIN; // chat list unread badge background for not muted chat
 dialogsUnreadBgMuted: MAIN_DARK; // chat list unread badge background for muted chat
 dialogsUnreadFg: GRAY_DARK; // chat list unread badge text
@@ -164,7 +166,7 @@ dialogsDraftFgOver: dialogsDraftFg; // chat list draft label with mouse over
 dialogsVerifiedIconBgOver: #eae5aa; // chat list verified icon background with mouse over
 dialogsVerifiedIconFgOver: dialogsVerifiedIconFg; // chat list verified icon check with mouse over
 dialogsSendingIconFgOver: dialogsSendingIconFg; // chat list sending message icon (clock) with mouse over
-dialogsSentIconFgOver: #eee8a5; // chat list sent message tick / double tick icon with mouse over
+dialogsSentIconFgOver: dialogsSentIconFg; // chat list sent message tick / double tick icon with mouse over
 dialogsUnreadBgOver: MAIN_DARK; // chat list unread badge background for not muted chat with mouse over
 dialogsUnreadBgMutedOver: MAIN; // chat list unread badge background for muted chat with mouse over
 dialogsUnreadFgOver: dialogsUnreadFg; // chat list unread badge text with mouse over
@@ -198,20 +200,20 @@ stickerPanDeleteBg: #000000cc; // delete X button background for custom sent sti
 stickerPanDeleteFg: windowFgActive; // delete X button icon for custom sent stickers in stickers panel (legacy)
 stickerPreviewBg: #000000b0; // sticker and GIF preview background (when you press and hold on a sticker)
 historyTextInFg: windowFg; // inbox message text
-historyTextInFgSelected: #B3B3B3; // inbox message selected text or text in a selected message
-historyTextOutFg: LIGHT; // outbox message text
+historyTextInFgSelected: historyTextInFg; // inbox message selected text or text in a selected message
+historyTextOutFg: historyTextInFg; // outbox message text
 historyTextOutFgSelected: historyTextInFgSelected; // outbox message selected text or text in a selected message
-historyLinkInFg: #ddd597; // inbox message link
-historyLinkInFgSelected: #fffbda; // inbox message link in a selected text or message
-historyLinkOutFg: #ddd597; // outbox message link
+historyLinkInFg: MAIN; // inbox message link
+historyLinkInFgSelected: MAIN_LIGHT; // inbox message link in a selected text or message
+historyLinkOutFg: historyLinkInFg; // outbox message link
 historyLinkOutFgSelected: #fffbda; // outbox message link in a selected text or message
 historyFileNameInFg: historyTextInFg; // inbox media filename text
 historyFileNameInFgSelected: #ffffff; // inbox media filename text in a selected message
 historyFileNameOutFg: historyTextOutFg; // outbox media filename text
 historyFileNameOutFgSelected: #ffffff; // outbox media filename text in a selected message
-historyOutIconFg: #e2d69d; // outbox message tick / double tick icon
+historyOutIconFg: MAIN; // outbox message tick / double tick icon
 historyOutIconFgSelected: #ffffff; // outbox message tick / double tick icon in a selected message
-historyIconFgInverted: #e2d69d; // media message tick / double tick icon (like in sent photo)
+historyIconFgInverted: historyOutIconFg; // media message tick / double tick icon (like in sent photo)
 historySendingOutIconFg: #9eface; // outbox sending message icon (clock)
 historySendingInIconFg: #76838b; // inbox sending message icon (clock) (like in sent messages to yourself or in sent messages to a channel)
 historySendingInvertedIconFg: #ffffffc8; // media sending message icon (clock) (like in sent photo)
@@ -256,11 +258,11 @@ historyScrollBarBgOver: #6b6b6bbc; // scroll bar current rectangle with mouse ov
 historyScrollBg: #5f5f5f4c; // scroll bar background (adjusted)
 historyScrollBgOver: #6262626b; // scroll bar background with mouse over the scroll bar (adjusted)
 msgInBg: GRAY_LIGHT; // inbox message background
-msgInBgSelected: #484848; // inbox selected message background (and background of selected text in those messages)
-msgOutBg: GRAY_LIGHT; // outbox message background
-msgOutBgSelected: #484848; // outbox selected message background (and background of selected text in those messages)
-msgSelectOverlay: #cec78d4c; // overlay which is filling the media parts of selected messages (like in selected photo message)
-msgStickerOverlay: #cec78d7f; // overlay which is filling the selected sticker message
+msgInBgSelected: MAIN_OVERLAY; // inbox selected message background (and background of selected text in those messages)
+msgOutBg: msgInBg; // outbox message background
+msgOutBgSelected: msgInBgSelected; // outbox selected message background (and background of selected text in those messages)
+msgSelectOverlay: MAIN_OVERLAY; // overlay which is filling the media parts of selected messages (like in selected photo message)
+msgStickerOverlay: msgSelectOverlay; // overlay which is filling the selected sticker message
 msgInServiceFg: windowActiveTextFg; // inbox message information text (like information about a forwarded message original sender)
 msgInServiceFgSelected: #ffffff; // inbox selected message information text (like information about a forwarded message original sender)
 msgOutServiceFg: MAIN; // outbox message information text (like information about a forwarded message original sender)
@@ -276,9 +278,9 @@ msgOutDateFgSelected: msgInDateFgSelected; // outbox selected message time text
 msgServiceFg: windowFgActive; // service message text (like date dividers or service message about the group title being changed)
 msgServiceBg: GRAY_DARK; // service message background (like in a service message about group title being changed) (adjusted)
 msgServiceBgSelected: MAIN_DARK; // service message selected text background (like in a service message about group title being changed) (adjusted)
-msgInReplyBarColor: #c7bf88; // inbox message reply outline
+msgInReplyBarColor: MAIN; // inbox message reply outline
 msgInReplyBarSelColor: #ffffff; // inbox selected message reply outline
-msgOutReplyBarColor: #c7bf88; // outbox message reply outline
+msgOutReplyBarColor: msgInReplyBarColor; // outbox message reply outline
 msgOutReplyBarSelColor: #ffffff; // outbox selected message reply outline
 msgImgReplyBarColor: msgServiceFg; // sticker message reply outline
 msgInMonoFg: #EFEBDA; // inbox message monospace text (like a message sent with `test` text)
@@ -454,5 +456,5 @@ filterInputActiveBg: GRAY_LIGHT;
 botKbBg: GRAY_LIGHT;
 botKbDownBg: #494f55;
 emojiIconFg: #6c7278;
-emojiIconFgActive: #c6bf89;
+emojiIconFgActive: MAIN;
 overviewCheckBorder: #e4eaef;
