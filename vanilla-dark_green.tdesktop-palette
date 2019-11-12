@@ -37,7 +37,7 @@ activeButtonFg: #ffffff; // default active button text
 activeButtonFgOver: #ffffff; // default active button text with mouse over
 activeButtonSecondaryFg: #FFFFFF; // default active button additional text (selected messages counter in forward / delete buttons)
 activeButtonSecondaryFgOver: activeButtonSecondaryFg; // default active button additional text with mouse over
-activeLineFg: #ded59a; // default active line (like code input field bottom border when you log in and field is focused)
+activeLineFg: MAIN; // default active line (like code input field bottom border when you log in and field is focused)
 activeLineFgError: #f57878; // default active line for error state (like code input field bottom border when you log in and you've entered incorrect code)
 lightButtonBg: GRAY; // default light button background (like buttons in boxes)
 lightButtonBgOver: GRAY_LIGHT; // default light button background with mouse over
@@ -225,7 +225,7 @@ historyCallArrowOutFg: #ffffff; // outgoing phone call arrow
 historyCallArrowOutFgSelected: #ffffff; // outgoing phone call arrow
 historyUnreadBarBg: GRAY_LIGHT; // new unread messages bar background
 historyUnreadBarBorder: shadowFg; // new unread messages bar shadow
-historyUnreadBarFg: #cdc68f; // new unread messages bar text
+historyUnreadBarFg: MAIN_DARK; // new unread messages bar text
 historyForwardChooseBg: #0000004c; // forwarding messages in a large window size "choose recipient" background
 historyForwardChooseFg: windowFgActive; // forwarding messages in a large window size "choose recipient" text
 historyPeer1NameFg: #ec7577; // red group member name
@@ -394,7 +394,7 @@ mainMenuBg: windowBg; // main menu background
 mainMenuCoverBg: MAIN_DARK; // main menu top cover background
 mainMenuCoverFg: windowFgActive; // main menu top cover text
 mainMenuCloudFg: activeButtonFg; //
-mainMenuCloudBg: #7d7b4e; //
+mainMenuCloudBg: MAIN; //
 mediaPlayerBg: windowBg; // audio file player background
 mediaPlayerActiveFg: windowBgActive; // audio file player playback progress already played part
 mediaPlayerInactiveFg: sliderBgInactive; // audio file player playback progress upcoming (not played yet) part with mouse over
