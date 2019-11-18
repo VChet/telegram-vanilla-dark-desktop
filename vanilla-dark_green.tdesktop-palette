@@ -148,7 +148,7 @@ dialogsDateFg: #B3B3B3; // chat list date text
 dialogsTextFg: LIGHT; // chat list message text
 dialogsTextFgService: #ebebeb; // chat list group sender name text (or media message type text)
 dialogsDraftFg: #ec6657; // chat list draft label
-dialogsVerifiedIconBg: #eae5aa; // chat list verified icon background
+dialogsVerifiedIconBg: MAIN_DARK; // chat list verified icon background
 dialogsVerifiedIconFg: GRAY; // chat list verified icon check
 dialogsSendingIconFg: #727272; // chat list sending message icon (clock)
 dialogsSentIconFg: MAIN; // chat list sent message tick / double tick icon
@@ -163,7 +163,7 @@ dialogsDateFgOver: #B3B3B3; // chat list date text with mouse over
 dialogsTextFgOver: #a3a7ae; // chat list message text with mouse over
 dialogsTextFgServiceOver: #f0f0f0; // chat list group sender name text with mouse over
 dialogsDraftFgOver: dialogsDraftFg; // chat list draft label with mouse over
-dialogsVerifiedIconBgOver: #eae5aa; // chat list verified icon background with mouse over
+dialogsVerifiedIconBgOver: MAIN; // chat list verified icon background with mouse over
 dialogsVerifiedIconFgOver: dialogsVerifiedIconFg; // chat list verified icon check with mouse over
 dialogsSendingIconFgOver: dialogsSendingIconFg; // chat list sending message icon (clock) with mouse over
 dialogsSentIconFgOver: dialogsSentIconFg; // chat list sent message tick / double tick icon with mouse over
@@ -293,9 +293,9 @@ msgDateImgBgOver: #00000074; // media message download icon circle background wi
 msgDateImgBgSelected: #6b674987; // selected media message time bubble background
 msgFileThumbLinkInFg: lightButtonFg; // inbox media file message with thumbnail download / open with button text
 msgFileThumbLinkInFgSelected: lightButtonFgOver; // inbox selected media file message with thumbnail download / open with button text
-msgFileThumbLinkOutFg: #e1d7aa; // outbox media file message with thumbnail download / open with button text
+msgFileThumbLinkOutFg: MAIN; // outbox media file message with thumbnail download / open with button text
 msgFileThumbLinkOutFgSelected: #ffffff; // outbox selected media file message with thumbnail download / open with button text
-msgFileInBg: #cec898; // inbox audio file download circle background
+msgFileInBg: MAIN; // inbox audio file download circle background
 msgFileInBgOver: #c8c291; // inbox audio file download circle background with mouse over
 msgFileInBgSelected: #ffffff; // inbox selected audio file download circle background
 msgFileOutBg: MAIN; // outbox audio file download circle background
@@ -372,7 +372,7 @@ historyReplyIconFg: windowBgActive; // reply / forward / edit message left icon
 historyReplyCancelFg: cancelIconFg; // reply / forward / edit message cancel button
 historyReplyCancelFgOver: cancelIconFgOver; // reply / forward / edit message cancel button with mouse over
 historyComposeButtonBg: historyComposeAreaBg; // unblock / join channel / mute channel button background
-historyComposeButtonBgOver: #31363c; // unblock / join channel / mute channel button background with mouse over
+historyComposeButtonBgOver: GRAY_SELECTION; // unblock / join channel / mute channel button background with mouse over
 historyComposeButtonBgRipple: #272b2f; // unblock / join channel / mute channel button ripple effect
 overviewCheckBg: #00000040; // shared files / links checkbox background for not selected rows when some rows are selected
 overviewCheckFg: #ffffff; // shared files / links checkbox icon for not selected rows when some rows are selected
