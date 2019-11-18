@@ -20,14 +20,13 @@ if (!themes[themeName]) {
 
 const theme = require(themes[themeName]);
 const paletteFile = "vanilla-dark";
-const mappings = require("./mappings").mappings;
+const { mappings } = require("./mappings");
 
 fs.readFile(`${paletteFile}_original.tdesktop-palette`, "utf8", function(error, data) {
   if (error) return console.log(error);
 
   const lines = data.split("\n").map(line => {
     const constant = line.substring(0, line.indexOf(":"));
-    const color = line.substring(line.indexOf(": ") + 1, line.indexOf(";"));
     if (mappings[constant]) {
       line = line.replace(/[#][^;]+/gm, mappings[constant]);
     }
