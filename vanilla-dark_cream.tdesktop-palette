@@ -151,10 +151,10 @@ dialogsDraftFg: #ec6657; // chat list draft label
 dialogsVerifiedIconBg: MAIN_DARK; // chat list verified icon background
 dialogsVerifiedIconFg: GRAY; // chat list verified icon check
 dialogsSendingIconFg: #727272; // chat list sending message icon (clock)
-dialogsSentIconFg: MAIN; // chat list sent message tick / double tick icon
+dialogsSentIconFg: MAIN_DARK; // chat list sent message tick / double tick icon
 dialogsUnreadBg: MAIN; // chat list unread badge background for not muted chat
 dialogsUnreadBgMuted: MAIN_DARK; // chat list unread badge background for muted chat
-dialogsUnreadFg: GRAY_DARK; // chat list unread badge text
+dialogsUnreadFg: GRAY; // chat list unread badge text
 dialogsOnlineBadgeFg: #e3dc87; // chat list online status
 dialogsBgOver: GRAY_LIGHT; // chat list background with mouse over
 dialogsNameFgOver: windowBoldFgOver; // chat list name text with mouse over
@@ -166,7 +166,7 @@ dialogsDraftFgOver: dialogsDraftFg; // chat list draft label with mouse over
 dialogsVerifiedIconBgOver: MAIN; // chat list verified icon background with mouse over
 dialogsVerifiedIconFgOver: dialogsVerifiedIconFg; // chat list verified icon check with mouse over
 dialogsSendingIconFgOver: dialogsSendingIconFg; // chat list sending message icon (clock) with mouse over
-dialogsSentIconFgOver: dialogsSentIconFg; // chat list sent message tick / double tick icon with mouse over
+dialogsSentIconFgOver: MAIN; // chat list sent message tick / double tick icon with mouse over
 dialogsUnreadBgOver: MAIN_DARK; // chat list unread badge background for not muted chat with mouse over
 dialogsUnreadBgMutedOver: MAIN; // chat list unread badge background for muted chat with mouse over
 dialogsUnreadFgOver: dialogsUnreadFg; // chat list unread badge text with mouse over
@@ -183,7 +183,7 @@ dialogsSendingIconFgActive: #ffffff99; // chat list sending message icon (clock)
 dialogsSentIconFgActive: dialogsTextFgActive; // chat list sent message tick / double tick icon for current (active) chat
 dialogsUnreadBgActive: dialogsTextFgActive; // chat list unread badge background for not muted chat for current (active) chat
 dialogsUnreadBgMutedActive: #f5f0e3; // chat list unread badge background for muted chat for current (active) chat
-dialogsUnreadFgActive: #969157; // chat list unread badge text for current (active) chat
+dialogsUnreadFgActive: dialogsUnreadFg; // chat list unread badge text for current (active) chat
 dialogsOnlineBadgeFgActive: #ffffff; // chat list online status for current (active) chat
 dialogsRippleBg: GRAY_SELECTION; //
 dialogsRippleBgActive: MAIN; //
