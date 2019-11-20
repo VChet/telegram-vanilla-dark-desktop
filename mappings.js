@@ -25,6 +25,7 @@ exports.mappings = {
   trayCounterFg: "GRAY_DARK",
   trayCounterBgMacInvert: "GRAY_DARK",
   trayCounterFgMacInvert: "GRAY_DARK_TP",
+  boxTextFgGood: "MAIN",
   boxSearchBg: "GRAY",
   contactsBgOver: "GRAY",
   dialogsNameFg: "LIGHT",
@@ -98,5 +99,6 @@ exports.mappings = {
   mainMenuCloudBg: "MAIN",
   filterInputActiveBg: "GRAY_LIGHT",
   botKbBg: "GRAY_LIGHT",
-  emojiIconFgActive: "MAIN"
+  emojiIconFgActive: "MAIN",
+  botKbDownBg: "GRAY_SELECTION"
 }
