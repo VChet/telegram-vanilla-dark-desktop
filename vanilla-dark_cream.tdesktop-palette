@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark (cream) 0.3.2
+// Telegram Vanilla Dark (cream) 0.3.4
 MAIN_DARK: #908B67;
 MAIN: #B9B384;
 MAIN_OVERLAY: #B9B3844C;
@@ -41,7 +41,7 @@ activeLineFg: MAIN; // default active line (like code input field bottom border 
 activeLineFgError: #f57878; // default active line for error state (like code input field bottom border when you log in and you've entered incorrect code)
 lightButtonBg: GRAY; // default light button background (like buttons in boxes)
 lightButtonBgOver: GRAY_LIGHT; // default light button background with mouse over
-lightButtonBgRipple: #3c474f; // default light button ripple effect
+lightButtonBgRipple: GRAY_SELECTION; // default light button ripple effect
 lightButtonFg: LIGHT; // default light button text
 lightButtonFgOver: lightButtonFg; // default light button text with mouse over
 attentionButtonFg: #f57474; // default attention button text (like confirm button on log out)
@@ -155,7 +155,7 @@ dialogsSentIconFg: MAIN_DARK; // chat list sent message tick / double tick icon
 dialogsUnreadBg: MAIN; // chat list unread badge background for not muted chat
 dialogsUnreadBgMuted: MAIN_DARK; // chat list unread badge background for muted chat
 dialogsUnreadFg: GRAY; // chat list unread badge text
-dialogsOnlineBadgeFg: #e3dc87; // chat list online status
+dialogsOnlineBadgeFg: MAIN; // chat list online status
 dialogsBgOver: GRAY_LIGHT; // chat list background with mouse over
 dialogsNameFgOver: windowBoldFgOver; // chat list name text with mouse over
 dialogsChatIconFgOver: dialogsNameFgOver; // chat list group or channel icon with mouse over
