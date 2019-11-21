@@ -14,9 +14,9 @@
   },
   "scripts": {
     "generate": "node generateTheme.js",
-    "patch": "versions patch vanilla-dark_*.tdekstop-palette",
-    "minor": "versions minor vanilla-dark_*.tdekstop-palette",
-    "major": "versions major vanilla-dark_*.tdekstop-palette"
+    "patch": "versions patch vanilla-dark_*.tdesktop-palette",
+    "minor": "versions minor vanilla-dark_*.tdesktop-palette",
+    "major": "versions major vanilla-dark_*.tdesktop-palette"
   },
   "dependencies": {
     "chalk": "^3.0.0"
