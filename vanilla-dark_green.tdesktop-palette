@@ -110,7 +110,7 @@ cancelIconFg: #666666; // default for settings close icon and box search cancel 
 cancelIconFgOver: #dcdcdc; // default for settings close icon and box search cancel icon with mouse over
 boxBg: windowBg; // box background
 boxTextFg: windowFg; // box text
-boxTextFgGood: #d6d2a0; // accepted box text (like when choosing username that is not occupied)
+boxTextFgGood: MAIN; // accepted box text (like when choosing username that is not occupied)
 boxTextFgError: #d84d4d; // rejecting box text (like when choosing username that is occupied)
 boxTitleFg: #ebebeb; // box title text
 boxSearchBg: GRAY; // box search field background (like in contacts box)
@@ -372,8 +372,8 @@ historyReplyIconFg: windowBgActive; // reply / forward / edit message left icon
 historyReplyCancelFg: cancelIconFg; // reply / forward / edit message cancel button
 historyReplyCancelFgOver: cancelIconFgOver; // reply / forward / edit message cancel button with mouse over
 historyComposeButtonBg: historyComposeAreaBg; // unblock / join channel / mute channel button background
-historyComposeButtonBgOver: GRAY_SELECTION; // unblock / join channel / mute channel button background with mouse over
-historyComposeButtonBgRipple: #272b2f; // unblock / join channel / mute channel button ripple effect
+historyComposeButtonBgOver: GRAY_LIGHT; // unblock / join channel / mute channel button background with mouse over
+historyComposeButtonBgRipple: GRAY_SELECTION; // unblock / join channel / mute channel button ripple effect
 overviewCheckBg: #00000040; // shared files / links checkbox background for not selected rows when some rows are selected
 overviewCheckFg: #ffffff; // shared files / links checkbox icon for not selected rows when some rows are selected
 overviewCheckFgActive: #ffffff; // shared files / links checkbox icon for selected rows
@@ -454,7 +454,7 @@ importantTooltipFg: toastFg; //
 importantTooltipFgLink: #fbf4bc; //
 filterInputActiveBg: GRAY_LIGHT;
 botKbBg: GRAY_LIGHT;
-botKbDownBg: #494f55;
+botKbDownBg: GRAY_SELECTION;
 emojiIconFg: #6c7278;
 emojiIconFgActive: MAIN;
 overviewCheckBorder: #e4eaef;
