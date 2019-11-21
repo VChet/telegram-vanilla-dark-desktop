@@ -1,17 +1,17 @@
-"use strict"
+"use strict";
 
 const fs = require("fs");
 const path = require("path");
 const chalk = require("chalk");
 
 const { mappings } = require("./mappings");
-const { version } = require('./package.json');
+const { version } = require("./package.json");
 const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
 function getThemes() {
   const files = fs.readdirSync("./themes/");
-  let themes = [];
-  files.map(function(file) {
+  const themes = [];
+  files.map((file) => {
     if (path.extname(file) === ".json") {
       themes.push({
         name: capitalize(path.basename(file, ".json")),
@@ -19,7 +19,7 @@ function getThemes() {
       });
     }
   });
-  return themes
+  return themes;
 }
 
 function generatePalette(theme) {
