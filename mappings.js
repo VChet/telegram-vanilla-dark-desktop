@@ -102,4 +102,4 @@ exports.mappings = {
   botKbBg: "GRAY_LIGHT",
   emojiIconFgActive: "MAIN",
   botKbDownBg: "GRAY_SELECTION"
-}
+};
