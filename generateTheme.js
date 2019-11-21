@@ -1,43 +1,55 @@
 "use strict"
 
 const fs = require("fs");
+const path = require("path");
 const chalk = require("chalk");
+
+const { mappings } = require("./mappings");
 const { version } = require('./package.json');
+const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
-const themes = {
-  aqua: "./themes/aqua.json",
-  cream: "./themes/cream.json",
-  green: "./themes/green.json",
-  red: "./themes/red.json",
-};
-
-let themeName = process.argv[2];
-if (!themes[themeName]) {
-  themeName = "cream";
-  console.log(chalk.yellow("Theme name wasn't specified or was incorrect. Generating `Cream` theme."));
-  console.log(chalk.yellow(`Available themes: ${Object.keys(themes)}`));
+function getThemes() {
+  const files = fs.readdirSync("./themes/");
+  let themes = [];
+  files.map(function(file) {
+    if (path.extname(file) === ".json") {
+      themes.push({
+        name: capitalize(path.basename(file, ".json")),
+        path: `./themes/${file}`
+      });
+    }
+  });
+  return themes
 }
 
-const theme = require(themes[themeName]);
-const paletteFile = "vanilla-dark";
-const { mappings } = require("./mappings");
-
-fs.readFile(`${paletteFile}_original.tdesktop-palette`, "utf8", function(error, data) {
-  if (error) return console.log(error);
-
-  const lines = data.split("\n").map(line => {
+function generatePalette(theme) {
+  const originalPalette = fs.readFileSync(`original.tdesktop-palette`, "utf8");
+  const lines = originalPalette.split("\n").map(line => {
     const constant = line.substring(0, line.indexOf(":"));
     if (mappings[constant]) {
       line = line.replace(/[#][^;]+/gm, mappings[constant]);
     }
     return line;
   });
+  const themeMappings = Object.entries(require(theme.path)).map(line => line.join(": ")).join(";\n") + ";";
 
-  const themeString = Object.entries(theme).map(line => line.join(": ")).join(";\n") + ";";
+  let result = `// Telegram Vanilla Dark ${theme.name} (${version})\n`;
+  result += lines.join("\n").replace("{{THEME}}", themeMappings);
+  fs.writeFileSync(`vanilla-dark_${theme.name}.tdesktop-palette`, result, "utf8");
+}
 
-  let result = `// Telegram Vanilla Dark (${themeName}) ${version}\n`;
-  result += lines.join("\n").replace("{{THEME}}", themeString);
-  fs.writeFile(`${paletteFile}_${themeName}.tdesktop-palette`, result, "utf8", error => {
-    if (error) return console.log(error);
-  });
-});
+const themeInput = process.argv[2];
+const themes = getThemes();
+
+if (themeInput === "all") {
+  themes.map((theme) => generatePalette(theme));
+  return;
+}
+try {
+  const theme = themes.find((theme) => theme.name.toLowerCase() === themeInput.toLowerCase());
+  generatePalette(theme);
+} catch (error) {
+  const availableThemes = themes.map((theme) => theme.name).join(", ");
+  console.log(chalk.red("Aborting: theme name wasn't specified or was incorrect."));
+  console.log(chalk.yellow(`Available themes: ${availableThemes}`));
+}
