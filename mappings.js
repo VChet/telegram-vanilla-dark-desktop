@@ -97,6 +97,8 @@ exports.mappings = {
   historyFileOutIconFg: "GRAY_LIGHT",
   historyFileOutIconFgSelected: "MAIN_DARK",
   historyFileOutRadialFgSelected: "MAIN_DARK",
+  historyCallArrowInFg: "MAIN",
+  historyCallArrowOutFg: "MAIN",
   historyToDownBg: "GRAY",
   historyToDownBgOver: "GRAY_LIGHT",
   historyToDownBgRipple: "GRAY_SELECTION",
