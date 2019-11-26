@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Cream (0.4.1)
+// Telegram Vanilla Dark Cream (0.4.2)
 MAIN_DARK: #908B67;
 MAIN: #B9B384;
 MAIN_OVERLAY: #B9B3844C;
@@ -217,11 +217,11 @@ historyIconFgInverted: historyOutIconFg; // media message tick / double tick ico
 historySendingOutIconFg: #9eface; // outbox sending message icon (clock)
 historySendingInIconFg: #76838b; // inbox sending message icon (clock) (like in sent messages to yourself or in sent messages to a channel)
 historySendingInvertedIconFg: #ffffffc8; // media sending message icon (clock) (like in sent photo)
-historyCallArrowInFg: #bab27b; // received phone call arrow
+historyCallArrowInFg: MAIN; // received phone call arrow
 historyCallArrowInFgSelected: #ffffff; // received phone call arrow in a selected message
 historyCallArrowMissedInFg: callArrowMissedFg; // missed phone call arrow
 historyCallArrowMissedInFgSelected: #ffffff; // missed phone call arrow in a selected message
-historyCallArrowOutFg: #ffffff; // outgoing phone call arrow
+historyCallArrowOutFg: MAIN; // outgoing phone call arrow
 historyCallArrowOutFgSelected: #ffffff; // outgoing phone call arrow
 historyUnreadBarBg: GRAY_LIGHT; // new unread messages bar background
 historyUnreadBarBorder: shadowFg; // new unread messages bar shadow
