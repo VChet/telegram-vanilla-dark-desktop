@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Red (0.4.0)
+// Telegram Vanilla Dark Red (0.4.1)
 MAIN_DARK: #B35843;
 MAIN: #FF7B5D;
 MAIN_OVERLAY: #FF7B5D4C;
@@ -8,8 +8,8 @@ GRAY_DARK_TP: #262A2E01;
 GRAY: #2B3034;
 GRAY_LIGHT: #2F353A;
 GRAY_SELECTION: #33393E;
-TEXT: #959595;
-LIGHT: #AAAAAA;
+TEXT: #AAAAAA;
+LIGHT: #CCCCCC;
 
 windowBg: GRAY; // white: fallback for background
 windowFg: #f5f5f5; // black: fallback for text
@@ -35,7 +35,7 @@ activeButtonBgOver: MAIN; // default active button background with mouse over
 activeButtonBgRipple: MAIN_LIGHT; // default active button ripple effect
 activeButtonFg: #ffffff; // default active button text
 activeButtonFgOver: #ffffff; // default active button text with mouse over
-activeButtonSecondaryFg: #FFFFFF; // default active button additional text (selected messages counter in forward / delete buttons)
+activeButtonSecondaryFg: LIGHT; // default active button additional text (selected messages counter in forward / delete buttons)
 activeButtonSecondaryFgOver: activeButtonSecondaryFg; // default active button additional text with mouse over
 activeLineFg: MAIN; // default active line (like code input field bottom border when you log in and field is focused)
 activeLineFgError: #f57878; // default active line for error state (like code input field bottom border when you log in and you've entered incorrect code)
@@ -118,8 +118,8 @@ boxTitleAdditionalFg: #808080; // box title additional text (like in create grou
 boxTitleCloseFg: cancelIconFg; // settings close icon and box search cancel icon (like in contacts box)
 boxTitleCloseFgOver: cancelIconFgOver; // settings close icon and box search cancel icon (like in contacts box) with mouse over
 membersAboutLimitFg: #5e6065; // text in channel members box about the limit (max 200 last members are shown)
-contactsBg: #222528; // contacts (and some other) box row background
-contactsBgOver: GRAY; // contacts (and some other) box row background with mouse over
+contactsBg: GRAY; // contacts (and some other) box row background
+contactsBgOver: GRAY_LIGHT; // contacts (and some other) box row background with mouse over
 contactsNameFg: boxTextFg; // contacts (and some other) box row name text
 contactsStatusFg: #808080; // contacts (and some other) box row additional text (like last seen stamp)
 contactsStatusFgOver: #808080; // contacts (and some other) box row additional text (like last seen stamp) with mouse over
@@ -144,8 +144,8 @@ dialogsMenuIconFgOver: menuIconFgOver; // main menu and lock telegram icon with 
 dialogsBg: windowBg; // chat list background
 dialogsNameFg: LIGHT; // chat list name text
 dialogsChatIconFg: dialogsNameFg; // chat list group or channel icon
-dialogsDateFg: #B3B3B3; // chat list date text
-dialogsTextFg: LIGHT; // chat list message text
+dialogsDateFg: TEXT; // chat list date text
+dialogsTextFg: TEXT; // chat list message text
 dialogsTextFgService: #ebebeb; // chat list group sender name text (or media message type text)
 dialogsDraftFg: #ec6657; // chat list draft label
 dialogsVerifiedIconBg: MAIN_DARK; // chat list verified icon background
@@ -159,8 +159,8 @@ dialogsOnlineBadgeFg: MAIN; // chat list online status
 dialogsBgOver: GRAY_LIGHT; // chat list background with mouse over
 dialogsNameFgOver: windowBoldFgOver; // chat list name text with mouse over
 dialogsChatIconFgOver: dialogsNameFgOver; // chat list group or channel icon with mouse over
-dialogsDateFgOver: #B3B3B3; // chat list date text with mouse over
-dialogsTextFgOver: #a3a7ae; // chat list message text with mouse over
+dialogsDateFgOver: LIGHT; // chat list date text with mouse over
+dialogsTextFgOver: LIGHT; // chat list message text with mouse over
 dialogsTextFgServiceOver: #f0f0f0; // chat list group sender name text with mouse over
 dialogsDraftFgOver: dialogsDraftFg; // chat list draft label with mouse over
 dialogsVerifiedIconBgOver: MAIN; // chat list verified icon background with mouse over
@@ -283,10 +283,10 @@ msgInReplyBarSelColor: #ffffff; // inbox selected message reply outline
 msgOutReplyBarColor: msgInReplyBarColor; // outbox message reply outline
 msgOutReplyBarSelColor: #ffffff; // outbox selected message reply outline
 msgImgReplyBarColor: msgServiceFg; // sticker message reply outline
-msgInMonoFg: #EFEBDA; // inbox message monospace text (like a message sent with `test` text)
-msgOutMonoFg: #f0eedd; // outbox message monospace text
-msgInMonoFgSelected: #fffbda; // inbox message monospace text in a selected text or message
-msgOutMonoFgSelected: #fffde9; // outbox message monospace text in a selected text or message
+msgInMonoFg: MAIN; // inbox message monospace text (like a message sent with `test` text)
+msgOutMonoFg: msgInMonoFg; // outbox message monospace text
+msgInMonoFgSelected: MAIN_LIGHT; // inbox message monospace text in a selected text or message
+msgOutMonoFgSelected: msgOutMonoFgSelected; // outbox message monospace text in a selected text or message
 msgDateImgFg: msgServiceFg; // media message time text (like time text in a sent photo)
 msgDateImgBg: #00000054; // media message time bubble background (like time bubble in a sent photo) or file with thumbnail download icon circle background
 msgDateImgBgOver: #00000074; // media message download icon circle background with mouse over (like file with thumbnail download icon)
