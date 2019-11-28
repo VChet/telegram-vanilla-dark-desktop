@@ -11,25 +11,32 @@
 **[This theme for Telegram Web](https://github.com/VChet/Telegram-Vanilla-Dark-Web)**
 
 ## Preview
-![](./images/aqua.png)
-<a href="https://t.me/addtheme/vanilla_dark_aqua">
-  <img src="https://img.shields.io/badge/install-aqua_theme-77BABC.svg" alt="install aqua theme">
-</a>
-___
-![](./images/cream.png)
-<a href="https://t.me/addtheme/vanilla_dark_cream">
-  <img src="https://img.shields.io/badge/install-cream_theme-B9B384.svg" alt="install cream theme">
-</a>
-___
-![](./images/green.png)
-<a href="https://t.me/addtheme/vanilla_dark_green">
-  <img src="https://img.shields.io/badge/install-green_theme-63B97F.svg" alt="install green theme">
-</a>
-___
-![](./images/red.png)
-<a href="https://t.me/addtheme/vanilla_dark_red">
-  <img src="https://img.shields.io/badge/install-red_theme-FF7B5D.svg" alt="install red theme">
-</a>
+<div align="center">
+  <a href="./images/aqua.png">
+    <img src="./images/aqua.png" alt="aqua theme" width="48%">
+  </a>
+  <a href="./images/cream.png">
+    <img src="./images/cream.png" alt="cream theme" width="48%">
+  </a>
+  <a href="./images/green.png">
+    <img src="./images/green.png" alt="green theme" width="48%">
+  </a>
+  <a href="./images/red.png">
+    <img src="./images/red.png" alt="red theme" width="48%">
+  </a>
+  <a href="https://t.me/addtheme/vanilla_dark_aqua">
+    <img src="https://img.shields.io/badge/install-aqua_theme-77BABC.svg" alt="install aqua theme">
+  </a>
+  <a width="23%" href="https://t.me/addtheme/vanilla_dark_cream">
+    <img src="https://img.shields.io/badge/install-cream_theme-B9B384.svg" alt="install cream theme">
+  </a>
+  <a width="23%" href="https://t.me/addtheme/vanilla_dark_green">
+    <img src="https://img.shields.io/badge/install-green_theme-63B97F.svg" alt="install green theme">
+  </a>
+  <a width="23%" href="https://t.me/addtheme/vanilla_dark_red">
+    <img src="https://img.shields.io/badge/install-red_theme-FF7B5D.svg" alt="install red theme">
+  </a>
+</div>
 
 ## Development
 1. [Fork](https://github.com/VChet/Telegram-Vanilla-Dark/fork) and download this repository.
