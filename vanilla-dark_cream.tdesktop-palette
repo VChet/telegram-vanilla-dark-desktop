@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Cream (0.4.2)
+// Telegram Vanilla Dark Cream (0.4.3)
 MAIN_DARK: #908B67;
 MAIN: #B9B384;
 MAIN_OVERLAY: #B9B3844C;
@@ -121,9 +121,9 @@ membersAboutLimitFg: #5e6065; // text in channel members box about the limit (ma
 contactsBg: GRAY; // contacts (and some other) box row background
 contactsBgOver: GRAY_LIGHT; // contacts (and some other) box row background with mouse over
 contactsNameFg: boxTextFg; // contacts (and some other) box row name text
-contactsStatusFg: #808080; // contacts (and some other) box row additional text (like last seen stamp)
-contactsStatusFgOver: #808080; // contacts (and some other) box row additional text (like last seen stamp) with mouse over
-contactsStatusFgOnline: #ddd9a3; // contacts (and some other) box row active additional text (like online status)
+contactsStatusFg: TEXT; // contacts (and some other) box row additional text (like last seen stamp)
+contactsStatusFgOver: LIGHT; // contacts (and some other) box row additional text (like last seen stamp) with mouse over
+contactsStatusFgOnline: MAIN; // contacts (and some other) box row active additional text (like online status)
 photoCropFadeBg: layerBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
 photoCropPointFg: #ffffff7f; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
 callArrowFg: #bfba80; // received phone call arrow (in calls list box)
