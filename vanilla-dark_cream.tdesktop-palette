@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Cream (0.4.3)
+// Telegram Vanilla Dark Cream (0.4.4)
 MAIN_DARK: #908B67;
 MAIN: #B9B384;
 MAIN_OVERLAY: #B9B3844C;
@@ -206,7 +206,7 @@ historyTextOutFgSelected: historyTextInFgSelected; // outbox message selected te
 historyLinkInFg: MAIN; // inbox message link
 historyLinkInFgSelected: MAIN_LIGHT; // inbox message link in a selected text or message
 historyLinkOutFg: historyLinkInFg; // outbox message link
-historyLinkOutFgSelected: #fffbda; // outbox message link in a selected text or message
+historyLinkOutFgSelected: historyLinkInFgSelected; // outbox message link in a selected text or message
 historyFileNameInFg: historyTextInFg; // inbox media filename text
 historyFileNameInFgSelected: #ffffff; // inbox media filename text in a selected message
 historyFileNameOutFg: historyTextOutFg; // outbox media filename text
@@ -417,7 +417,7 @@ mediaviewControlBg: #0000003c; // controls background (like next photo / previou
 mediaviewControlFg: windowFgActive; // controls icon (like next photo / previous photo)
 mediaviewCaptionBg: #11111180; // caption text background (when viewing photo with caption)
 mediaviewCaptionFg: mediaviewControlFg; // caption text
-mediaviewTextLinkFg: #f5eeb9; // caption text link
+mediaviewTextLinkFg: historyLinkInFg; // caption text link
 mediaviewSaveMsgBg: toastBg; // save to file toast message background in Media Viewer
 mediaviewSaveMsgFg: toastFg; // save to file toast message text
 mediaviewPlaybackActive: #c7c7c7; // video playback progress already played part

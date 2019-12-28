@@ -1,6 +1,6 @@
 {
   "name": "telegram-vanilla-dark-desktop",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Dark theme for desktop telegram app",
   "author": "VChet",
   "license": "CC-BY-SA-4.0",
@@ -22,6 +22,6 @@
     "chalk": "^3.0.0"
   },
   "devDependencies": {
-    "versions": "^7.0.2"
+    "versions": "^7.0.5"
   }
 }
