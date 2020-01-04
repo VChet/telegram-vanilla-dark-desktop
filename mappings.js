@@ -20,6 +20,7 @@ exports.mappings = {
   filterInputBorderFg: "GRAY_LIGHT",
   filterInputInactiveBg: "GRAY_LIGHT",
   titleBg: "GRAY_LIGHT",
+  titleButtonBgOver: "GRAY",
   trayCounterBg: "MAIN",
   trayCounterBgMute: "MAIN_DARK",
   trayCounterFg: "GRAY_DARK",
