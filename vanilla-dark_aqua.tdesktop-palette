@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Aqua (0.4.4)
+// Telegram Vanilla Dark Aqua (0.4.5)
 MAIN_DARK: #5B8E90;
 MAIN: #77BABC;
 MAIN_OVERLAY: #77BABC4C;
@@ -84,7 +84,7 @@ titleBg: GRAY_LIGHT; // custom window title background when window is inactive
 titleBgActive: titleBg; // custom window title background when window is active
 titleButtonBg: titleBg; // custom window title minimize/maximize/restore button background when window is inactive (Windows only)
 titleButtonFg: #8b9096; // custom window title minimize/maximize/restore button icon when window is inactive (Windows only)
-titleButtonBgOver: #4c535b; // custom window title minimize/maximize/restore button background with mouse over when window is inactive (Windows only)
+titleButtonBgOver: GRAY; // custom window title minimize/maximize/restore button background with mouse over when window is inactive (Windows only)
 titleButtonFgOver: #e0e0e0; // custom window title minimize/maximize/restore button icon with mouse over when window is inactive (Windows only)
 titleButtonBgActive: titleButtonBg; // custom window title minimize/maximize/restore button background when window is active (Windows only)
 titleButtonFgActive: titleButtonFg; // custom window title minimize/maximize/restore button icon when window is active (Windows only)
