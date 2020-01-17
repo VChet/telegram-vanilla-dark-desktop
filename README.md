@@ -3,6 +3,12 @@
   <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/tags">
     <img src="https://img.shields.io/github/tag/VChet/Telegram-Vanilla-Dark-Desktop.svg?label=version" alt="Version">
   </a>
+  <a href="https://david-dm.org/VChet/Telegram-Vanilla-Dark-Desktop?type=dev">
+    <img src="https://img.shields.io/david/VChet/Telegram-Vanilla-Dark-Desktop.svg" alt="dependencies">
+  </a>
+  <a href="https://david-dm.org/VChet/Telegram-Vanilla-Dark-Desktop">
+    <img src="https://img.shields.io/david/dev/VChet/Telegram-Vanilla-Dark-Desktop.svg?label=devDependencies" alt="devDependencies">
+  </a>
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
   </a>
