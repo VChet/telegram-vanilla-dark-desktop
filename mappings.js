@@ -33,6 +33,7 @@ exports.mappings = {
   contactsStatusFg: "TEXT",
   contactsStatusFgOver: "LIGHT",
   contactsStatusFgOnline: "MAIN",
+  callArrowFg: "MAIN",
   dialogsNameFg: "LIGHT",
   dialogsDateFg: "TEXT",
   dialogsTextFg: "TEXT",
