@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Red (0.4.5)
+// Telegram Vanilla Dark Red (0.4.6)
 MAIN_DARK: #B35843;
 MAIN: #FF7B5D;
 MAIN_OVERLAY: #FF7B5D4C;
@@ -126,7 +126,7 @@ contactsStatusFgOver: LIGHT; // contacts (and some other) box row additional tex
 contactsStatusFgOnline: MAIN; // contacts (and some other) box row active additional text (like online status)
 photoCropFadeBg: layerBg; // avatar crop box fade background (when choosing a new photo in Settings or for a group)
 photoCropPointFg: #ffffff7f; // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
-callArrowFg: #bfba80; // received phone call arrow (in calls list box)
+callArrowFg: MAIN; // received phone call arrow (in calls list box)
 callArrowMissedFg: #dd5b4a; // missed phone call arrow (in calls list box)
 introBg: windowBg; // login background
 introTitleFg: #eeeeee; // login title text
@@ -333,11 +333,11 @@ historyVideoMessageProgressFg: historyFileThumbIconFg; // radial playback progre
 msgWaveformInActive: windowBgActive; // inbox voice message active waveform lines (like played part of currently playing voice message)
 msgWaveformInActiveSelected: #ffffff; // inbox selected voice message active waveform lines (like played part of currently playing voice message)
 msgWaveformInInactive: #5d6b76; // inbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
-msgWaveformInInactiveSelected: #cbc490; // inbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
-msgWaveformOutActive: MAIN; // outbox voice message active waveform lines (like played part of currently playing voice message)
+msgWaveformInInactiveSelected: MAIN; // inbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
+msgWaveformOutActive: msgWaveformInActive; // outbox voice message active waveform lines (like played part of currently playing voice message)
 msgWaveformOutActiveSelected: #ffffff; // outbox selected voice message active waveform lines (like played part of currently playing voice message)
 msgWaveformOutInactive: #596874; // outbox voice message inactive waveform lines (like upcoming part of currently playing voice message)
-msgWaveformOutInactiveSelected: #cbc490; // outbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
+msgWaveformOutInactiveSelected: msgWaveformInInactiveSelected; // outbox selected voice message inactive waveform lines (like upcoming part of currently playing voice message)
 msgBotKbOverBgAdd: #ffffff14; // this is painted over a bot inline keyboard button (which has msgServiceBg background) when mouse is over that button
 msgBotKbIconFg: msgServiceFg; // bot inline keyboard button icon in the top-right corner (like in @vote bot when a poll is ready to be shared)
 msgBotKbRippleBg: #9e9d9d10; // bot inline keyboard button ripple effect
