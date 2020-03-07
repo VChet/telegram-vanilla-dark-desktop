@@ -14,14 +14,14 @@
   },
   "scripts": {
     "generate": "node generateTheme.js",
-    "patch": "versions patch vanilla-dark_*.tdesktop-palette",
-    "minor": "versions minor vanilla-dark_*.tdesktop-palette",
-    "major": "versions major vanilla-dark_*.tdesktop-palette"
+    "patch": "versions patch --all vanilla-dark_*.tdesktop-palette",
+    "minor": "versions minor --all vanilla-dark_*.tdesktop-palette",
+    "major": "versions major --all vanilla-dark_*.tdesktop-palette"
   },
   "dependencies": {
     "chalk": "^3.0.0"
   },
   "devDependencies": {
-    "versions": "^7.0.5"
+    "versions": "^8.2.1"
   }
 }
