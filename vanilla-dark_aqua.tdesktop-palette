@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Aqua (0.4.6)
+// Telegram Vanilla Dark Aqua (0.5.0)
 MAIN_DARK: #5B8E90;
 MAIN: #77BABC;
 MAIN_OVERLAY: #77BABC4C;
@@ -296,10 +296,10 @@ msgFileThumbLinkInFgSelected: lightButtonFgOver; // inbox selected media file me
 msgFileThumbLinkOutFg: MAIN; // outbox media file message with thumbnail download / open with button text
 msgFileThumbLinkOutFgSelected: #ffffff; // outbox selected media file message with thumbnail download / open with button text
 msgFileInBg: MAIN; // inbox audio file download circle background
-msgFileInBgOver: #c8c291; // inbox audio file download circle background with mouse over
+msgFileInBgOver: MAIN_LIGHT; // inbox audio file download circle background with mouse over
 msgFileInBgSelected: #ffffff; // inbox selected audio file download circle background
-msgFileOutBg: MAIN; // outbox audio file download circle background
-msgFileOutBgOver: #ffffff; // outbox audio file download circle background with mouse over
+msgFileOutBg: msgFileInBg; // outbox audio file download circle background
+msgFileOutBgOver: msgFileInBgOver; // outbox audio file download circle background with mouse over
 msgFileOutBgSelected: #ffffff; // outbox selected audio file download circle background
 msgFile1Bg: #b3ad81; // blue shared links / files without image square thumbnail
 msgFile1BgDark: #989267; // blue shared files without image download circle background
