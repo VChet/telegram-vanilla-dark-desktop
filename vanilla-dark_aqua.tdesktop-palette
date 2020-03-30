@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Aqua (0.6.0)
+// Telegram Vanilla Dark Aqua (0.6.1)
 MAIN_DARK: #5B8E90;
 MAIN: #77BABC;
 MAIN_OVERLAY: #77BABC4C;
@@ -465,5 +465,5 @@ sideBarTextFg: TEXT; // filters side bar text
 sideBarTextFgActive: MAIN; // filters side bar active item text
 sideBarIconFg: LIGHT; // filters side bar icon
 sideBarIconFgActive: MAIN; // filters side bar active item icon
-sideBarBadgeBg: #d6d08b; // filters side bar badge background
-sideBarBadgeBgMuted: #8d939e; // filters side bar unimportant badge background
+sideBarBadgeBg: MAIN; // filters side bar badge background
+sideBarBadgeBgMuted: MAIN_DARK; // filters side bar unimportant badge background
