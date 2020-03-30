@@ -120,5 +120,12 @@ exports.mappings = {
   filterInputActiveBg: "GRAY_LIGHT",
   botKbBg: "GRAY_LIGHT",
   emojiIconFgActive: "MAIN",
-  botKbDownBg: "GRAY_SELECTION"
+  botKbDownBg: "GRAY_SELECTION",
+  sideBarBg: "GRAY",
+  sideBarBgActive: "GRAY_LIGHT",
+  sideBarBgRipple: "GRAY_SELECTION",
+  sideBarTextFg: "TEXT",
+  sideBarTextFgActive: "MAIN",
+  sideBarIconFg: "LIGHT",
+  sideBarIconFgActive: "MAIN"
 };
