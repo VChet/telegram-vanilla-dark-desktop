@@ -127,5 +127,7 @@ exports.mappings = {
   sideBarTextFg: "TEXT",
   sideBarTextFgActive: "MAIN",
   sideBarIconFg: "LIGHT",
-  sideBarIconFgActive: "MAIN"
+  sideBarIconFgActive: "MAIN",
+  sideBarBadgeBg: "MAIN",
+  sideBarBadgeBgMuted: "MAIN_DARK"
 };
