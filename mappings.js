@@ -7,7 +7,7 @@ exports.mappings = {
   activeButtonBg: "MAIN_DARK",
   activeButtonBgOver: "MAIN",
   activeButtonBgRipple: "MAIN_LIGHT",
-  activeButtonSecondaryFg: "LIGHT",
+  activeButtonSecondaryFg: "WHITE",
   activeLineFg: "MAIN",
   lightButtonFg: "LIGHT",
   lightButtonBg: "GRAY",
