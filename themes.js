@@ -11,7 +11,8 @@ exports.themes = [{
     GRAY_LIGHT: "#2C2C36",
     GRAY_SELECTION: "#31313B",
     TEXT: "#AAAAAA",
-    LIGHT: "#CCCCCC"
+    LIGHT: "#CCCCCC",
+    WHITE: "#FFFFFF"
   }
 }, {
   name: "Cream",
@@ -26,7 +27,8 @@ exports.themes = [{
     GRAY_LIGHT: "#272727",
     GRAY_SELECTION: "#2C2C2C",
     TEXT: "#AAAAAA",
-    LIGHT: "#CCCCCC"
+    LIGHT: "#CCCCCC",
+    WHITE: "#FFFFFF"
   }
 }, {
   name: "Green",
@@ -41,7 +43,8 @@ exports.themes = [{
     GRAY_LIGHT: "#2A2A2C",
     GRAY_SELECTION: "#2F2F31",
     TEXT: "#AAAAAA",
-    LIGHT: "#CCCCCC"
+    LIGHT: "#CCCCCC",
+    WHITE: "#FFFFFF"
   },
 }, {
   name: "Red",
@@ -56,6 +59,7 @@ exports.themes = [{
     GRAY_LIGHT: "#2F353A",
     GRAY_SELECTION: "#33393E",
     TEXT: "#AAAAAA",
-    LIGHT: "#CCCCCC"
+    LIGHT: "#CCCCCC",
+    WHITE: "#FFFFFF"
   }
 }];
