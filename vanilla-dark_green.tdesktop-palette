@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Green (0.6.1)
+// Telegram Vanilla Dark Green (0.7.0)
 MAIN_DARK: #4B8B60;
 MAIN: #63B97F;
 MAIN_OVERLAY: #63B97F4C;
@@ -10,6 +10,7 @@ GRAY_LIGHT: #2A2A2C;
 GRAY_SELECTION: #2F2F31;
 TEXT: #AAAAAA;
 LIGHT: #CCCCCC;
+WHITE: #FFFFFF;
 
 windowBg: GRAY; // white: fallback for background
 windowFg: #f5f5f5; // black: fallback for text
@@ -35,7 +36,7 @@ activeButtonBgOver: MAIN; // default active button background with mouse over
 activeButtonBgRipple: MAIN_LIGHT; // default active button ripple effect
 activeButtonFg: #ffffff; // default active button text
 activeButtonFgOver: #ffffff; // default active button text with mouse over
-activeButtonSecondaryFg: LIGHT; // default active button additional text (selected messages counter in forward / delete buttons)
+activeButtonSecondaryFg: WHITE; // default active button additional text (selected messages counter in forward / delete buttons)
 activeButtonSecondaryFgOver: activeButtonSecondaryFg; // default active button additional text with mouse over
 activeLineFg: MAIN; // default active line (like code input field bottom border when you log in and field is focused)
 activeLineFgError: #f57878; // default active line for error state (like code input field bottom border when you log in and you've entered incorrect code)
