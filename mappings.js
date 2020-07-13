@@ -116,6 +116,7 @@ exports.mappings = {
   historyComposeAreaBg: "GRAY",
   mainMenuCoverBg: "MAIN_DARK",
   mainMenuCloudBg: "MAIN",
+  mediaPlayerDisabledFg: "MAIN_LIGHT",
   mediaviewTextLinkFg: "historyLinkInFg",
   filterInputActiveBg: "GRAY_LIGHT",
   botKbBg: "GRAY_LIGHT",
