@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Green (0.7.0)
+// Telegram Vanilla Dark Green (0.7.1)
 MAIN_DARK: #4B8B60;
 MAIN: #63B97F;
 MAIN_OVERLAY: #63B97F4C;
@@ -399,7 +399,7 @@ mainMenuCloudBg: MAIN; //
 mediaPlayerBg: windowBg; // audio file player background
 mediaPlayerActiveFg: windowBgActive; // audio file player playback progress already played part
 mediaPlayerInactiveFg: sliderBgInactive; // audio file player playback progress upcoming (not played yet) part with mouse over
-mediaPlayerDisabledFg: #9dd1ef; // audio file player loading progress (when you're playing an audio file and switch to the previous one which is not loaded yet)
+mediaPlayerDisabledFg: MAIN_LIGHT; // audio file player loading progress (when you're playing an audio file and switch to the previous one which is not loaded yet)
 mediaviewFileBg: windowBg; // file rectangle background (when you view a png file in Media Viewer and go to a previous, not loaded yet, file)
 mediaviewFileNameFg: windowFg; // file name in file rectangle
 mediaviewFileSizeFg: windowSubTextFg; // file size text in file rectangle
