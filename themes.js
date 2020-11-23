@@ -1,3 +1,9 @@
+const identicalColors = {
+  TEXT: "#AAAAAA",
+  LIGHT: "#CCCCCC",
+  WHITE: "#FFFFFF"
+}
+
 exports.themes = [{
   name: "Aqua",
   constants: {
@@ -10,9 +16,7 @@ exports.themes = [{
     GRAY: "#23232D",
     GRAY_LIGHT: "#2C2C36",
     GRAY_SELECTION: "#31313B",
-    TEXT: "#AAAAAA",
-    LIGHT: "#CCCCCC",
-    WHITE: "#FFFFFF"
+    ...identicalColors
   }
 }, {
   name: "Cream",
@@ -26,9 +30,7 @@ exports.themes = [{
     GRAY: "#222222",
     GRAY_LIGHT: "#272727",
     GRAY_SELECTION: "#2C2C2C",
-    TEXT: "#AAAAAA",
-    LIGHT: "#CCCCCC",
-    WHITE: "#FFFFFF"
+    ...identicalColors
   }
 }, {
   name: "Green",
@@ -42,9 +44,7 @@ exports.themes = [{
     GRAY: "#212122",
     GRAY_LIGHT: "#2A2A2C",
     GRAY_SELECTION: "#2F2F31",
-    TEXT: "#AAAAAA",
-    LIGHT: "#CCCCCC",
-    WHITE: "#FFFFFF"
+    ...identicalColors
   },
 }, {
   name: "Red",
@@ -58,8 +58,6 @@ exports.themes = [{
     GRAY: "#2B3034",
     GRAY_LIGHT: "#2F353A",
     GRAY_SELECTION: "#33393E",
-    TEXT: "#AAAAAA",
-    LIGHT: "#CCCCCC",
-    WHITE: "#FFFFFF"
+    ...identicalColors
   }
 }];
