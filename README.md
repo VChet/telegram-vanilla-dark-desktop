@@ -17,6 +17,7 @@
 **[This theme for Telegram Web](https://github.com/VChet/Telegram-Vanilla-Dark-Web)**
 
 ## Preview
+
 <div align="center">
   <a href="./images/aqua.png">
     <img src="./images/aqua.png" alt="aqua theme" width="48%">
@@ -45,6 +46,7 @@
 </div>
 
 ## Development
+
 1. [Fork](https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/fork) and download this repository
 1. Install [Node.js](https://nodejs.org/)
 1. Install dependencies `npm install`
