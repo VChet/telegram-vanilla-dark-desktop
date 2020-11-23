@@ -118,6 +118,8 @@ exports.mappings = {
   mainMenuCloudBg: "MAIN",
   mediaPlayerDisabledFg: "MAIN_LIGHT",
   mediaviewTextLinkFg: "historyLinkInFg",
+  callAnswerBg: "MAIN",
+  callAnswerRipple: "MAIN_LIGHT",
   filterInputActiveBg: "GRAY_LIGHT",
   botKbBg: "GRAY_LIGHT",
   emojiIconFgActive: "MAIN",
