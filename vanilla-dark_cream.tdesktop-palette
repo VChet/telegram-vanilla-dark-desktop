@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Cream (0.7.1)
+// Telegram Vanilla Dark Cream (0.7.2)
 MAIN_DARK: #908B67;
 MAIN: #B9B384;
 MAIN_OVERLAY: #B9B3844C;
@@ -436,8 +436,8 @@ callNameFg: #ffffff; // phone call popup name text
 callFingerprintBg: #00000066; // phone call popup emoji fingerprint background
 callStatusFg: #aaabac; // phone call popup status text
 callIconFg: #ffffff; // phone call popup answer, hangup and mute mic icon
-callAnswerBg: #cbc59b; // phone call popup answer button background
-callAnswerRipple: #bab486; // phone call popup answer button ripple effect
+callAnswerBg: MAIN; // phone call popup answer button background
+callAnswerRipple: MAIN_LIGHT; // phone call popup answer button ripple effect
 callAnswerBgOuter: #e8dba026; // phone call popup answer button outer ripple effect
 callHangupBg: #d75a5a; // phone call popup hangup button background
 callHangupRipple: #c04646; // phone call popup hangup button ripple effect
