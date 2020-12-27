@@ -13,7 +13,7 @@
     "url": "https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/issues"
   },
   "scripts": {
-    "generate": "ts-node generateTheme.ts",
+    "generate": "ts-node src/generateTheme.ts",
     "test": "eslint --ext .js,.ts",
     "patch": "versions patch --all vanilla-dark_*.tdesktop-palette",
     "minor": "versions minor --all vanilla-dark_*.tdesktop-palette",

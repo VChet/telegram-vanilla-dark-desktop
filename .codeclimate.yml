@@ -2,4 +2,4 @@ plugins:
   duplication:
     enabled: true
     exclude_paths:
-      - themes.ts
+      - src/themes.ts
