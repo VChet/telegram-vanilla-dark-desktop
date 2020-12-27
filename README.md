@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="logo" src="https://raw.githubusercontent.com/VChet/Telegram-Vanilla-Dark-Web/master/images/logo.png" width="580"><br/>
+  <img alt="Telegram Vanilla Dark" src="https://raw.githubusercontent.com/VChet/Telegram-Vanilla-Dark-Web/master/images/logo.png" width="580"><br/>
   <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/tags">
     <img src="https://img.shields.io/github/tag/VChet/Telegram-Vanilla-Dark-Desktop.svg?label=version" alt="Version">
   </a>
@@ -8,6 +8,9 @@
   </a>
   <a href="https://david-dm.org/VChet/Telegram-Vanilla-Dark-Desktop">
     <img src="https://img.shields.io/david/dev/VChet/Telegram-Vanilla-Dark-Desktop.svg?label=devDependencies" alt="devDependencies">
+  </a>
+  <a href="https://codeclimate.com/github/VChet/Telegram-Vanilla-Dark-Desktop/maintainability">
+  <img src="https://api.codeclimate.com/v1/badges/07f7649534c9727adc8c/maintainability" />
   </a>
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
