@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Cream (0.7.2)
+// Telegram Vanilla Dark Cream (0.7.3)
 MAIN_DARK: #908B67;
 MAIN: #B9B384;
 MAIN_OVERLAY: #B9B3844C;
@@ -133,8 +133,8 @@ introBg: windowBg; // login background
 introTitleFg: #eeeeee; // login title text
 introDescriptionFg: #999999; // login description text
 introErrorFg: #999999; // login error text (like when providing a wrong log in code)
-introCoverTopBg: #7b7650; // intro gradient top (from)
-introCoverBottomBg: #7b7650; // intro gradient bottom (to)
+introCoverTopBg: #7b7651; // intro gradient top (from)
+introCoverBottomBg: #7b7651; // intro gradient bottom (to)
 introCoverIconsFg: #9d9770; // intro cloud graphics
 introCoverPlaneTrace: #96916b; // intro plane traces
 introCoverPlaneInner: #ced9e2; // intro plane part
@@ -183,7 +183,7 @@ dialogsVerifiedIconFgActive: dialogsBgActive; // chat list verified icon check f
 dialogsSendingIconFgActive: #ffffff99; // chat list sending message icon (clock) for current (active) chat
 dialogsSentIconFgActive: dialogsTextFgActive; // chat list sent message tick / double tick icon for current (active) chat
 dialogsUnreadBgActive: dialogsTextFgActive; // chat list unread badge background for not muted chat for current (active) chat
-dialogsUnreadBgMutedActive: #f5f0e3; // chat list unread badge background for muted chat for current (active) chat
+dialogsUnreadBgMutedActive: #f5efe3; // chat list unread badge background for muted chat for current (active) chat
 dialogsUnreadFgActive: dialogsUnreadFg; // chat list unread badge text for current (active) chat
 dialogsOnlineBadgeFgActive: #ffffff; // chat list online status for current (active) chat
 dialogsRippleBg: GRAY_SELECTION; //
