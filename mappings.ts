@@ -1,4 +1,4 @@
-exports.mappings = {
+export const mappings: { [key: string]: string } = {
   windowBg: "GRAY",
   windowBgOver: "GRAY_LIGHT",
   windowBgRipple: "GRAY_SELECTION",

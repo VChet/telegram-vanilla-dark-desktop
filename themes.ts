@@ -1,10 +1,6 @@
-const identicalColors = {
-  TEXT: "#AAAAAA",
-  LIGHT: "#CCCCCC",
-  WHITE: "#FFFFFF"
-};
+import { Theme } from "./types/Theme"
 
-exports.themes = [{
+export const themes: Array<Theme> = [{
   name: "Aqua",
   constants: {
     MAIN_DARK: "#5B8E90",
@@ -16,7 +12,9 @@ exports.themes = [{
     GRAY: "#23232D",
     GRAY_LIGHT: "#2C2C36",
     GRAY_SELECTION: "#31313B",
-    ...identicalColors
+    TEXT: "#AAAAAA",
+    LIGHT: "#CCCCCC",
+    WHITE: "#FFFFFF"
   }
 }, {
   name: "Cream",
@@ -30,7 +28,9 @@ exports.themes = [{
     GRAY: "#222222",
     GRAY_LIGHT: "#272727",
     GRAY_SELECTION: "#2C2C2C",
-    ...identicalColors
+    TEXT: "#AAAAAA",
+    LIGHT: "#CCCCCC",
+    WHITE: "#FFFFFF"
   }
 }, {
   name: "Green",
@@ -44,7 +44,9 @@ exports.themes = [{
     GRAY: "#212122",
     GRAY_LIGHT: "#2A2A2C",
     GRAY_SELECTION: "#2F2F31",
-    ...identicalColors
+    TEXT: "#AAAAAA",
+    LIGHT: "#CCCCCC",
+    WHITE: "#FFFFFF"
   },
 }, {
   name: "Red",
@@ -58,6 +60,8 @@ exports.themes = [{
     GRAY: "#2B3034",
     GRAY_LIGHT: "#2F353A",
     GRAY_SELECTION: "#33393E",
-    ...identicalColors
+    TEXT: "#AAAAAA",
+    LIGHT: "#CCCCCC",
+    WHITE: "#FFFFFF"
   }
 }];
