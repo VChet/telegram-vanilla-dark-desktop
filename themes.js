@@ -2,7 +2,7 @@ const identicalColors = {
   TEXT: "#AAAAAA",
   LIGHT: "#CCCCCC",
   WHITE: "#FFFFFF"
-}
+};
 
 exports.themes = [{
   name: "Aqua",
