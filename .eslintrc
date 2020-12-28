@@ -1,29 +1,27 @@
 {
   "root": true,
-  "parserOptions": { "ecmaVersion": 2020 },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "project": [ "./tsconfig.json" ]
+  },
   "plugins": [
-    "sonarjs",
     "import",
     "@typescript-eslint"
   ],
   "extends": [
     "airbnb-base",
     "airbnb-typescript/base",
-    "plugin:sonarjs/recommended",
+    "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "comma-dangle": [0],
-    "function-paren-newline": [0],
-    "implicit-arrow-linebreak": [0],
-    "linebreak-style": [0],
-    "max-len": [1, { "code": 120 }],
-    "no-param-reassign": [2, { "props": false }],
-    "no-restricted-syntax": [2, "ForInStatement", "LabeledStatement", "WithStatement"],
-    "no-unused-expressions": [2, { "allowTernary": true }],
-    "operator-linebreak": [2, "after"],
-    "quotes": [2, "double", {"avoidEscape": true, "allowTemplateLiterals": true}]
+    "linebreak-style": "off",
+    "max-len": ["warn", { "code": 120 }],
+    "no-console": "off",
+    "operator-linebreak": ["error", "after"],
+    "@typescript-eslint/comma-dangle": ["error", "never"],
+    "@typescript-eslint/quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
   },
   "env": {
     "es6": true,

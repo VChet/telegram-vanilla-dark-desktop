@@ -8,5 +8,11 @@
     "allowJs": true,
     "strict": true,
     "noUnusedLocals": true
-  }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
