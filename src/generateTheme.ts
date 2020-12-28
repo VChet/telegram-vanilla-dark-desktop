@@ -1,8 +1,8 @@
 import fs from "fs";
 import { red, yellow } from "chalk";
 
-import { mappings } from "./mappings";
-import { themes } from "./themes";
+import mappings from "./mappings";
+import themes from "./themes";
 import { version } from "../package.json";
 
 import { Theme } from "./types/Theme";

@@ -1,6 +1,6 @@
-import { Theme } from "./types/Theme"
+import { Theme } from "./types/Theme";
 
-export const themes: Array<Theme> = [{
+const themes: Array<Theme> = [{
   name: "Aqua",
   constants: {
     MAIN_DARK: "#5B8E90",
@@ -47,7 +47,7 @@ export const themes: Array<Theme> = [{
     TEXT: "#AAAAAA",
     LIGHT: "#CCCCCC",
     WHITE: "#FFFFFF"
-  },
+  }
 }, {
   name: "Red",
   constants: {
@@ -65,3 +65,5 @@ export const themes: Array<Theme> = [{
     WHITE: "#FFFFFF"
   }
 }];
+
+export default themes;

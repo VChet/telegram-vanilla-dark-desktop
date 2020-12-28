@@ -15,4 +15,3 @@ export interface Theme {
     WHITE: string
   }
 }
-

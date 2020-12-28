@@ -21,7 +21,7 @@
     "no-console": "off",
     "operator-linebreak": ["error", "after"],
     "@typescript-eslint/comma-dangle": ["error", "never"],
-    "@typescript-eslint/quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "@typescript-eslint/quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }]
   },
   "env": {
     "es6": true,
