@@ -9,6 +9,9 @@
   <a href="https://david-dm.org/VChet/Telegram-Vanilla-Dark-Desktop">
     <img src="https://img.shields.io/david/dev/VChet/Telegram-Vanilla-Dark-Desktop.svg?label=devDependencies" alt="devDependencies">
   </a>
+  <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/actions?query=workflow%3Alinter">
+    <img src="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/workflows/linter/badge.svg?branch=master" alt="linter">
+  </a>
   <a href="https://codeclimate.com/github/VChet/Telegram-Vanilla-Dark-Desktop/maintainability">
   <img src="https://api.codeclimate.com/v1/badges/07f7649534c9727adc8c/maintainability" />
   </a>
