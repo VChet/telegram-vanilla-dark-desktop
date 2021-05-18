@@ -1,5 +1,5 @@
 import fs from "fs";
-import { red, yellow } from "chalk";
+import { red, yellow, green } from "chalk";
 
 import mappings from "./mappings";
 import themes from "./themes";
@@ -23,17 +23,25 @@ function generatePalette(theme: Theme): void {
 }
 
 const themeInput: string | undefined = process.argv[2];
+const availableThemes = themes.map((theme) => theme.name).join(", ");
+
+if (!themeInput) {
+  console.log(red("Aborting: theme name not specified."));
+  console.log(yellow(`Available themes: ${availableThemes}`));
+  process.exit();
+}
 
 if (themeInput === "all") {
   themes.map((theme) => generatePalette(theme));
+  console.log(green("Generation finished!"));
   process.exit();
 }
 
 const themeData = themes.find((theme) => theme.name.toLowerCase() === themeInput.toLowerCase());
 if (themeData) {
   generatePalette(themeData);
+  console.log(green("Generation finished!"));
 } else {
-  const availableThemes = themes.map((theme) => theme.name).join(", ");
-  console.log(red("Aborting: theme name wasn't specified or was incorrect."));
+  console.log(red("Aborting: incorrect theme name."));
   console.log(yellow(`Available themes: ${availableThemes}`));
 }
