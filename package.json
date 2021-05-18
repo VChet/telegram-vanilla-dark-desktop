@@ -16,7 +16,6 @@
     "generate": "ts-node src/generateTheme.ts",
     "lint": "eslint --ext js,ts ./src",
     "fix": "npm run lint -- --fix",
-    "test": "npm run lint",
     "patch": "versions patch --all vanilla-dark_*.tdesktop-palette",
     "minor": "versions minor --all vanilla-dark_*.tdesktop-palette",
     "major": "versions major --all vanilla-dark_*.tdesktop-palette"
