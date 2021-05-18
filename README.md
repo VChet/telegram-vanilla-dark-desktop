@@ -3,19 +3,13 @@
   <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/tags">
     <img src="https://img.shields.io/github/tag/VChet/Telegram-Vanilla-Dark-Desktop.svg?label=version" alt="Version">
   </a>
-  <a href="https://david-dm.org/VChet/Telegram-Vanilla-Dark-Desktop?type=dev">
-    <img src="https://img.shields.io/david/VChet/Telegram-Vanilla-Dark-Desktop.svg" alt="dependencies">
-  </a>
-  <a href="https://david-dm.org/VChet/Telegram-Vanilla-Dark-Desktop">
-    <img src="https://img.shields.io/david/dev/VChet/Telegram-Vanilla-Dark-Desktop.svg?label=devDependencies" alt="devDependencies">
-  </a>
   <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/actions?query=workflow%3Alinter">
     <img src="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/workflows/linter/badge.svg?branch=master" alt="linter">
   </a>
   <a href="https://codeclimate.com/github/VChet/Telegram-Vanilla-Dark-Desktop/maintainability">
   <img src="https://api.codeclimate.com/v1/badges/07f7649534c9727adc8c/maintainability" />
   </a>
-  <a href="http://makeapullrequest.com">
+  <a href="https://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
   </a>
 </p>
@@ -56,9 +50,9 @@
 1. [Fork](https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/fork) and download this repository
 1. Install [Node.js](https://nodejs.org/)
 1. Install dependencies `npm install`
-1. Change colors in [one of the themes or add your own](themes.js)
-1. Change or add theme constants in [mappings](mappings.js)
+1. Change colors in [one of the themes or add your own](/src/themes.ts)
+1. Change or add theme constants in [mappings](/src/mappings.ts)
 1. Generate theme with `npm run generate <theme-name>`
-1. Check your theme in Telegram. `Settings > Chat Settings > Create new theme > Import existing theme > <palette-file>`
+1. Check generated theme in Telegram. `Settings > Chat Settings > Create new theme > Import existing theme > <palette-file>`
 1. Commit and push your changes
 1. Make a pull request
