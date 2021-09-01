@@ -1,4 +1,4 @@
-import fs from "fs";
+import { readFileSync, writeFileSync } from "fs";
 import { red, yellow, green } from "chalk";
 
 import mappings from "./mappings";
@@ -8,7 +8,7 @@ import { version } from "../package.json";
 import { Theme } from "./types/Theme";
 
 function generatePalette(theme: Theme): void {
-  const originalPalette: string = fs.readFileSync("./src/palettes/original.tdesktop-palette", "utf8");
+  const originalPalette: string = readFileSync("./src/palettes/original.tdesktop-palette", "utf8");
   const lines: Array<string> = originalPalette.split("\n").map((line) => {
     const constant = line.substring(0, line.indexOf(":"));
     return mappings[constant] ?
@@ -19,7 +19,7 @@ function generatePalette(theme: Theme): void {
 
   let result = `// Telegram Vanilla Dark ${theme.name} (${version})\n`;
   result += lines.join("\n").replace("{{THEME}}", themeMappings);
-  fs.writeFileSync(`./src/palettes/vanilla-dark_${theme.name}.tdesktop-palette`, result, "utf8");
+  writeFileSync(`./src/palettes/vanilla-dark_${theme.name}.tdesktop-palette`, result, "utf8");
 }
 
 const themeInput: string | undefined = process.argv[2];
