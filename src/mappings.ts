@@ -19,6 +19,7 @@ const mappings: { [key: string]: string } = {
   placeholderFgActive: "TEXT",
   filterInputBorderFg: "GRAY_LIGHT",
   filterInputInactiveBg: "GRAY_LIGHT",
+  tooltipFg: "LIGHT",
   titleBg: "GRAY_LIGHT",
   titleButtonBgOver: "GRAY",
   trayCounterBg: "MAIN",
