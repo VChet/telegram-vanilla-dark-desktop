@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Cream (0.7.3)
+// Telegram Vanilla Dark Cream (0.7.4)
 MAIN_DARK: #908B67;
 MAIN: #B9B384;
 MAIN_OVERLAY: #B9B3844C;
@@ -77,9 +77,9 @@ filterInputInactiveBg: GRAY_LIGHT; // default rounded input field background (li
 checkboxFg: #6c6c6c; // default unchecked checkbox rounded rectangle (and also emoji category icons)
 sliderBgInactive: #545454; // default slider not active bar (like in Settings when you choose interface scale or custom notifications count)
 sliderBgActive: windowBgActive; // default slider active bar (like in Settings when you choose interface scale or custom notifications count)
-tooltipBg: #d4dadd; // tooltip background (like when you put mouse over the message timestamp and wait)
-tooltipFg: #9a9e9c; // tooltip text
-tooltipBorderFg: #c9d1db; // tooltip border
+tooltipBg: #282e33; // tooltip background (like when you put mouse over the message timestamp and wait)
+tooltipFg: LIGHT; // tooltip text
+tooltipBorderFg: #313b43; // tooltip border
 titleShadow: #00000003; // one pixel line shadow at the bottom of custom window title
 titleBg: GRAY_LIGHT; // custom window title background when window is inactive
 titleBgActive: titleBg; // custom window title background when window is active

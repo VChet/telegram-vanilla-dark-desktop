@@ -1,6 +1,6 @@
 {
   "name": "telegram-vanilla-dark-desktop",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "Dark theme for desktop telegram app",
   "author": "VChet",
   "license": "CC-BY-SA-4.0",
@@ -16,9 +16,9 @@
     "generate": "ts-node src/generateTheme.ts",
     "lint": "eslint --ext js,ts ./src",
     "fix": "npm run lint -- --fix",
-    "patch": "versions patch --all vanilla-dark_*.tdesktop-palette",
-    "minor": "versions minor --all vanilla-dark_*.tdesktop-palette",
-    "major": "versions major --all vanilla-dark_*.tdesktop-palette"
+    "patch": "versions patch --all **/vanilla-dark_*.tdesktop-palette",
+    "minor": "versions minor --all **/vanilla-dark_*.tdesktop-palette",
+    "major": "versions major --all **/vanilla-dark_*.tdesktop-palette"
   },
   "dependencies": {
     "chalk": "^4.1.2"
