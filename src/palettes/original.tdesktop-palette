@@ -65,9 +65,9 @@ filterInputInactiveBg: #3d444b; // default rounded input field background (like 
 checkboxFg: #6c6c6c; // default unchecked checkbox rounded rectangle (and also emoji category icons)
 sliderBgInactive: #545454; // default slider not active bar (like in Settings when you choose interface scale or custom notifications count)
 sliderBgActive: windowBgActive; // default slider active bar (like in Settings when you choose interface scale or custom notifications count)
-tooltipBg: #d4dadd; // tooltip background (like when you put mouse over the message timestamp and wait)
+tooltipBg: #282e33; // tooltip background (like when you put mouse over the message timestamp and wait)
 tooltipFg: #9a9e9c; // tooltip text
-tooltipBorderFg: #c9d1db; // tooltip border
+tooltipBorderFg: #313b43; // tooltip border
 titleShadow: #00000003; // one pixel line shadow at the bottom of custom window title
 titleBg: #3a4047; // custom window title background when window is inactive
 titleBgActive: titleBg; // custom window title background when window is active
