@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
-import { red, yellow, green } from "chalk";
+import { red, yellow, green } from "nanocolors";
 
 import mappings from "./mappings";
 import themes from "./themes";
