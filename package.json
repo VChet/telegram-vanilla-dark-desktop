@@ -21,7 +21,7 @@
     "major": "versions major --all **/vanilla-dark_*.tdesktop-palette"
   },
   "dependencies": {
-    "nanocolors": "^0.1.2"
+    "nanocolors": "^0.2.12"
   },
   "devDependencies": {
     "@types/node": "^16.9.4",
