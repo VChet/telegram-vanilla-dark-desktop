@@ -3,6 +3,8 @@ name: eslint
 on:
   push:
     branch: master
+    tags-ignore:
+      - "**"
   pull_request:
 
 jobs:
