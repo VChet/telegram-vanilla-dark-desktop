@@ -3,8 +3,8 @@
   <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/tags">
     <img src="https://img.shields.io/github/tag/VChet/Telegram-Vanilla-Dark-Desktop.svg?label=version" alt="Version">
   </a>
-  <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/actions?query=workflow%3Alinter">
-    <img src="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/workflows/linter/badge.svg?branch=master" alt="linter">
+  <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/actions?query=workflow%3Aeslint">
+    <img src="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/workflows/eslint/badge.svg?branch=master" alt="eslint">
   </a>
   <a href="https://codeclimate.com/github/VChet/Telegram-Vanilla-Dark-Desktop/maintainability">
   <img src="https://api.codeclimate.com/v1/badges/07f7649534c9727adc8c/maintainability" />
