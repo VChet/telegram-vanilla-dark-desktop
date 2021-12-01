@@ -21,6 +21,7 @@
     "major": "versions major --all **/vanilla-dark_*.tdesktop-palette"
   },
   "dependencies": {
+    "canvas": "^2.8.0",
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
