@@ -2,19 +2,10 @@
   "root": true,
   "parserOptions": {
     "ecmaVersion": 2021,
-    "project": [ "./tsconfig.json" ]
+    "project": ["./tsconfig.json"]
   },
-  "plugins": [
-    "import",
-    "@typescript-eslint"
-  ],
-  "extends": [
-    "airbnb-base",
-    "airbnb-typescript/base",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "plugins": ["import", "@typescript-eslint"],
+  "extends": ["eslint:recommended", "airbnb-base", "airbnb-typescript/base", "plugin:@typescript-eslint/recommended"],
   "rules": {
     "linebreak-style": "off",
     "max-len": ["warn", { "code": 120 }],
