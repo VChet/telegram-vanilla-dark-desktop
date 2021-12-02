@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Cream (0.8.0)
+// Telegram Vanilla Dark Cream (0.8.1)
 MAIN_DARK: #908B67;
 MAIN: #B9B384;
 MAIN_OVERLAY: #B9B3844C;
@@ -277,7 +277,7 @@ msgInDateFgSelected: msgInDateFg; // inbox selected message time text
 msgOutDateFg: msgInDateFg; // outbox message time text
 msgOutDateFgSelected: msgInDateFgSelected; // outbox selected message time text
 msgServiceFg: windowFgActive; // service message text (like date dividers or service message about the group title being changed)
-msgServiceBg: GRAY_DARK; // service message background (like in a service message about group title being changed) (adjusted)
+msgServiceBg: GRAY_LIGHT; // service message background (like in a service message about group title being changed) (adjusted)
 msgServiceBgSelected: MAIN_DARK; // service message selected text background (like in a service message about group title being changed) (adjusted)
 msgInReplyBarColor: MAIN; // inbox message reply outline
 msgInReplyBarSelColor: #ffffff; // inbox selected message reply outline
