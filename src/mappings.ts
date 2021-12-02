@@ -86,7 +86,7 @@ const mappings: { [key: string]: string } = {
   msgInReplyBarColor: "MAIN",
   msgOutReplyBarColor: "msgInReplyBarColor",
   msgServiceFg: "LIGHT",
-  msgServiceBg: "GRAY_DARK",
+  msgServiceBg: "GRAY_LIGHT",
   msgServiceBgSelected: "MAIN_DARK",
   msgSelectOverlay: "MAIN_OVERLAY",
   msgStickerOverlay: "msgSelectOverlay",
