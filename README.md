@@ -6,15 +6,10 @@
   <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/actions?query=workflow%3Aeslint">
     <img src="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/workflows/eslint/badge.svg?branch=master" alt="eslint">
   </a>
-  <a href="https://codeclimate.com/github/VChet/Telegram-Vanilla-Dark-Desktop/maintainability">
-  <img src="https://api.codeclimate.com/v1/badges/07f7649534c9727adc8c/maintainability" />
-  </a>
   <a href="https://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
   </a>
 </p>
-
-**[This theme for Telegram Web](https://github.com/VChet/Telegram-Vanilla-Dark-Web)**
 
 ## Preview
 
@@ -53,6 +48,9 @@
 1. Change colors in [one of the themes or add your own](/src/themes.ts)
 1. Change or add theme constants in [mappings](/src/mappings.ts)
 1. Generate theme with `npm run generate <theme-name>`
-1. Check generated theme in Telegram. `Settings > Chat Settings > Create new theme > Import existing theme > <palette-file>`
+1. Check generated theme in Telegram.
+   ```
+   Settings > Chat Settings > Create new theme > Import existing theme > <palette-file>
+   ```
 1. Commit and push your changes
 1. Make a pull request
