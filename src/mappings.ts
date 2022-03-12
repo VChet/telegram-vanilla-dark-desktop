@@ -133,7 +133,16 @@ const mappings: { [key: string]: string } = {
   sideBarIconFg: "LIGHT",
   sideBarIconFgActive: "MAIN",
   sideBarBadgeBg: "MAIN",
-  sideBarBadgeBgMuted: "MAIN_DARK"
+  sideBarBadgeBgMuted: "MAIN_DARK",
+  settingsIconBg1: "TRANSPARENT",
+  settingsIconBg2: "TRANSPARENT",
+  settingsIconBg3: "TRANSPARENT",
+  settingsIconBg4: "TRANSPARENT",
+  settingsIconBg5: "TRANSPARENT",
+  settingsIconBg6: "TRANSPARENT",
+  settingsIconBg8: "TRANSPARENT",
+  settingsIconBgArchive: "TRANSPARENT",
+  settingsIconFg: "LIGHT"
 };
 
 export default mappings;

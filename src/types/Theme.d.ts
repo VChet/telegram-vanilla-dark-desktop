@@ -13,5 +13,6 @@ export interface Theme {
     TEXT: string
     LIGHT: string
     WHITE: string
+    TRANSPARENT: string
   }
 }

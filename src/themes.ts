@@ -14,7 +14,8 @@ const themes: Array<Theme> = [{
     GRAY_SELECTION: "#31313B",
     TEXT: "#AAAAAA",
     LIGHT: "#CCCCCC",
-    WHITE: "#FFFFFF"
+    WHITE: "#FFFFFF",
+    TRANSPARENT: "#00000000"
   }
 }, {
   name: "Cream",
@@ -30,7 +31,8 @@ const themes: Array<Theme> = [{
     GRAY_SELECTION: "#2C2C2C",
     TEXT: "#AAAAAA",
     LIGHT: "#CCCCCC",
-    WHITE: "#FFFFFF"
+    WHITE: "#FFFFFF",
+    TRANSPARENT: "#00000000"
   }
 }, {
   name: "Green",
@@ -46,7 +48,8 @@ const themes: Array<Theme> = [{
     GRAY_SELECTION: "#2F2F31",
     TEXT: "#AAAAAA",
     LIGHT: "#CCCCCC",
-    WHITE: "#FFFFFF"
+    WHITE: "#FFFFFF",
+    TRANSPARENT: "#00000000"
   }
 }, {
   name: "Red",
@@ -62,7 +65,8 @@ const themes: Array<Theme> = [{
     GRAY_SELECTION: "#33393E",
     TEXT: "#AAAAAA",
     LIGHT: "#CCCCCC",
-    WHITE: "#FFFFFF"
+    WHITE: "#FFFFFF",
+    TRANSPARENT: "#00000000"
   }
 }];
 
