@@ -10,9 +10,9 @@ export interface Theme {
     GRAY: string
     GRAY_LIGHT: string
     GRAY_SELECTION: string
-    TEXT: string
-    LIGHT: string
-    WHITE: string
-    TRANSPARENT: string
+    TEXT?: string
+    LIGHT?: string
+    WHITE?: string
+    TRANSPARENT?: string
   }
 }
