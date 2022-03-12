@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Green (0.8.1)
+// Telegram Vanilla Dark Green (0.9.0)
 MAIN_DARK: #4B8B60;
 MAIN: #63B97F;
 MAIN_OVERLAY: #63B97F4C;
@@ -11,6 +11,7 @@ GRAY_SELECTION: #2F2F31;
 TEXT: #AAAAAA;
 LIGHT: #CCCCCC;
 WHITE: #FFFFFF;
+TRANSPARENT: #00000000;
 
 windowBg: GRAY; // white: fallback for background
 windowFg: #f5f5f5; // black: fallback for text
@@ -468,3 +469,12 @@ sideBarIconFg: LIGHT; // filters side bar icon
 sideBarIconFgActive: MAIN; // filters side bar active item icon
 sideBarBadgeBg: MAIN; // filters side bar badge background
 sideBarBadgeBgMuted: MAIN_DARK; // filters side bar unimportant badge background
+settingsIconBg1: TRANSPARENT; // red settings icon background
+settingsIconBg2: TRANSPARENT; // green settings icon background
+settingsIconBg3: TRANSPARENT; // light-orange settings icon background
+settingsIconBg4: TRANSPARENT; // light-blue settings icon background
+settingsIconBg5: TRANSPARENT; // dark-blue settings icon background
+settingsIconBg6: TRANSPARENT; // purple settings icon background
+settingsIconBg8: TRANSPARENT; // dark-orange settings icon background
+settingsIconBgArchive: TRANSPARENT; // archive main menu icon background
+settingsIconFg: LIGHT; // settings icon shape
