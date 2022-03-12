@@ -456,3 +456,12 @@ sideBarIconFg: #8d939e; // filters side bar icon
 sideBarIconFgActive: #d6d08b; // filters side bar active item icon
 sideBarBadgeBg: #d6d08b; // filters side bar badge background
 sideBarBadgeBgMuted: #8d939e; // filters side bar unimportant badge background
+settingsIconBg1: #f06964; // red settings icon background
+settingsIconBg2: #6dc534; // green settings icon background
+settingsIconBg3: #ed9f20; // light-orange settings icon background
+settingsIconBg4: #56b3f5; // light-blue settings icon background
+settingsIconBg5: #7595ff; // dark-blue settings icon background
+settingsIconBg6: #b580e2; // purple settings icon background
+settingsIconBg8: #f2925b; // dark-orange settings icon background
+settingsIconBgArchive: #9da2b0; // archive main menu icon background
+settingsIconFg: #ff0000; // settings icon shape
