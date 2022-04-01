@@ -1,4 +1,8 @@
 // Telegram Vanilla Dark Red (0.9.0)
+TEXT: #AAAAAA;
+LIGHT: #CCCCCC;
+WHITE: #FFFFFF;
+TRANSPARENT: #00000000;
 MAIN_DARK: #B35843;
 MAIN: #FF7B5D;
 MAIN_OVERLAY: #FF7B5D4C;
@@ -8,10 +12,6 @@ GRAY_DARK_TP: #262A2E01;
 GRAY: #2B3034;
 GRAY_LIGHT: #2F353A;
 GRAY_SELECTION: #33393E;
-TEXT: #AAAAAA;
-LIGHT: #CCCCCC;
-WHITE: #FFFFFF;
-TRANSPARENT: #00000000;
 
 windowBg: GRAY; // white: fallback for background
 windowFg: #f5f5f5; // black: fallback for text
