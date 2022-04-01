@@ -1,5 +1,0 @@
-plugins:
-  duplication:
-    enabled: true
-    exclude_paths:
-      - src/themes.ts
