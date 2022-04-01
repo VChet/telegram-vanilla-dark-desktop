@@ -21,19 +21,19 @@
     "major": "versions major --all **/vanilla-dark_*.tdesktop-palette"
   },
   "dependencies": {
-    "canvas": "^2.9.0",
+    "canvas": "^2.9.1",
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
-    "@types/node": "^17.0.21",
-    "@typescript-eslint/eslint-plugin": "^5.14.0",
-    "@typescript-eslint/parser": "^5.14.0",
-    "eslint": "^8.10.0",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-airbnb-typescript": "^16.2.0",
     "eslint-plugin-import": "^2.25.4",
     "ts-node": "^10.7.0",
-    "typescript": "^4.6.2",
+    "typescript": "^4.6.3",
     "versions": "^9.2.2"
   }
 }
