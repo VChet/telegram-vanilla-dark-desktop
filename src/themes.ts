@@ -1,6 +1,8 @@
 import { Theme } from "./types/Theme";
 
-const common: Record<string, string> = {
+type HEX = `#${string}`;
+
+const common: Record<string, HEX> = {
   TEXT: "#AAAAAA",
   LIGHT: "#CCCCCC",
   WHITE: "#FFFFFF",
