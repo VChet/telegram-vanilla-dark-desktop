@@ -30,7 +30,7 @@ function generateBackground({ name, constants }: Theme): Promise<void> {
   const context = canvas.getContext("2d");
   context.fillStyle = constants.GRAY_DARK;
   context.fillRect(0, 0, size, size);
-  return writeFile(`./src/backgrounds/bgTile_${name.toLowerCase()}.png`, canvas.toBuffer("image/png"));
+  return writeFile(`./src/backgrounds/${name.toLowerCase()}.png`, canvas.toBuffer("image/png"));
 }
 
 function buildTheme({ name }: Theme) {
@@ -40,12 +40,18 @@ function buildTheme({ name }: Theme) {
     archive.on("warning", (err) => console.log(err));
     archive.on("error", (err) => reject(err));
 
-    const output = createWriteStream(`./src/themes/vanilla-dark_${filename}.tdesktop-theme`);
+    const output = createWriteStream(`./src/themes/${filename}.tdesktop-theme`);
     output.on("close", () => resolve(`${filename}.tdesktop-theme: ${archive.pointer()} bytes`));
 
     archive.pipe(output);
-    archive.file(`./src/palettes/vanilla-dark_${filename}.tdesktop-palette`, { name: "colors.tdesktop-palette", date: new Date(0) });
-    archive.file(`./src/backgrounds/bgTile_${filename}.png`, { name: "background.png", date: new Date(0) });
+    archive.file(
+      `./src/palettes/vanilla-dark_${filename}.tdesktop-palette`,
+      { name: "colors.tdesktop-palette", date: new Date(0) }
+    );
+    archive.file(
+      `./src/backgrounds/${filename}.png`,
+      { name: "background.png", date: new Date(0) }
+    );
     archive.finalize();
   });
 }
@@ -66,16 +72,15 @@ function buildTheme({ name }: Theme) {
       await buildTheme(theme);
     }));
     console.log(green("Generation finished!"));
-    process.exit();
-  }
-
-  const themeData = themes.find((theme) => theme.name.toLowerCase() === themeInput.toLowerCase());
-  if (themeData) {
-    await Promise.all([generatePalette(themeData), generateBackground(themeData)]);
-    await buildTheme(themeData);
-    console.log(green("Generation finished!"));
   } else {
-    console.log(red("Aborting: incorrect theme name."));
-    console.log(yellow(`Available themes: ${availableThemes}`));
+    const themeData = themes.find((theme) => theme.name.toLowerCase() === themeInput.toLowerCase());
+    if (themeData) {
+      await Promise.all([generatePalette(themeData), generateBackground(themeData)]);
+      await buildTheme(themeData);
+      console.log(green("Generation finished!"));
+    } else {
+      console.log(red("Aborting: incorrect theme name."));
+      console.log(yellow(`Available themes: ${availableThemes}`));
+    }
   }
 })();
