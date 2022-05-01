@@ -18,7 +18,7 @@ async function generatePalette({ name, constants }: Theme): Promise<void> {
 
   let result = `// Telegram Vanilla Dark ${name} (${version})\n`;
   result += lines.join("\n").replace("{{THEME}}", themeMappings);
-  return writeFile(`./src/palettes/vanilla-dark_${name}.tdesktop-palette`, result, "utf8");
+  return writeFile(`./src/palettes/vanilla-dark_${name.toLowerCase()}.tdesktop-palette`, result, "utf8");
 }
 
 function generateBackground({ name, constants }: Theme): Promise<void> {
@@ -27,7 +27,7 @@ function generateBackground({ name, constants }: Theme): Promise<void> {
   const context = canvas.getContext("2d");
   context.fillStyle = constants.GRAY_DARK;
   context.fillRect(0, 0, size, size);
-  return writeFile(`./src/backgrounds/bgTile_${name}.png`, canvas.toBuffer("image/png"));
+  return writeFile(`./src/backgrounds/bgTile_${name.toLowerCase()}.png`, canvas.toBuffer("image/png"));
 }
 
 (async () => {
