@@ -44,8 +44,8 @@ function buildTheme({ name }: Theme) {
     output.on("close", () => resolve(`${filename}.tdesktop-theme: ${archive.pointer()} bytes`));
 
     archive.pipe(output);
-    archive.file(`./src/palettes/vanilla-dark_${filename}.tdesktop-palette`, { name: "colors.tdesktop-palette" });
-    archive.file(`./src/backgrounds/bgTile_${filename}.png`, { name: "background.png" });
+    archive.file(`./src/palettes/vanilla-dark_${filename}.tdesktop-palette`, { name: "colors.tdesktop-palette", date: new Date(0) });
+    archive.file(`./src/backgrounds/bgTile_${filename}.png`, { name: "background.png", date: new Date(0) });
     archive.finalize();
   });
 }
