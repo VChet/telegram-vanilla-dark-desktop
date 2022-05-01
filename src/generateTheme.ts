@@ -1,6 +1,9 @@
+import archiver from "archiver";
 import { createCanvas } from "canvas";
+import { createWriteStream } from "fs";
 import { readFile, writeFile } from "fs/promises";
 import { green, red, yellow } from "picocolors";
+
 import { version } from "../package.json";
 import mappings from "./mappings";
 import themes from "./themes";
@@ -30,6 +33,23 @@ function generateBackground({ name, constants }: Theme): Promise<void> {
   return writeFile(`./src/backgrounds/bgTile_${name.toLowerCase()}.png`, canvas.toBuffer("image/png"));
 }
 
+function buildTheme({ name }: Theme) {
+  const filename = name.toLowerCase();
+  return new Promise((resolve, reject) => {
+    const archive = archiver("zip");
+    archive.on("warning", (err) => console.log(err));
+    archive.on("error", (err) => reject(err));
+
+    const output = createWriteStream(`./src/themes/vanilla-dark_${filename}.tdesktop-theme`);
+    output.on("close", () => resolve(`${filename}.tdesktop-theme: ${archive.pointer()} bytes`));
+
+    archive.pipe(output);
+    archive.file(`./src/palettes/vanilla-dark_${filename}.tdesktop-palette`, { name: "colors.tdesktop-palette" });
+    archive.file(`./src/backgrounds/bgTile_${filename}.png`, { name: "background.png" });
+    archive.finalize();
+  });
+}
+
 (async () => {
   const themeInput: string | undefined = process.argv[2];
   const availableThemes = themes.map((theme) => theme.name).join(", ");
@@ -41,7 +61,10 @@ function generateBackground({ name, constants }: Theme): Promise<void> {
   }
 
   if (themeInput === "all") {
-    await Promise.all(themes.map((theme) => Promise.all([generatePalette(theme), generateBackground(theme)])));
+    await Promise.all(themes.map(async (theme) => {
+      await Promise.all([generatePalette(theme), generateBackground(theme)]);
+      await buildTheme(theme);
+    }));
     console.log(green("Generation finished!"));
     process.exit();
   }
@@ -49,6 +72,7 @@ function generateBackground({ name, constants }: Theme): Promise<void> {
   const themeData = themes.find((theme) => theme.name.toLowerCase() === themeInput.toLowerCase());
   if (themeData) {
     await Promise.all([generatePalette(themeData), generateBackground(themeData)]);
+    await buildTheme(themeData);
     console.log(green("Generation finished!"));
   } else {
     console.log(red("Aborting: incorrect theme name."));
