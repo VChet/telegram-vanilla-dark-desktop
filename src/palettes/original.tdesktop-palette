@@ -219,33 +219,42 @@ historyForwardChooseBg: #0000004c; // forwarding messages in a large window size
 historyForwardChooseFg: windowFgActive; // forwarding messages in a large window size "choose recipient" text
 historyPeer1NameFg: #ec7577; // red group member name
 historyPeer1NameFgSelected: #ffffff; // red group member name in a selected message
-historyPeer1UserpicBg: #e17076; // red userpic background
+historyPeer1UserpicBg: #ff845e; // red userpic background
 historyPeer2NameFg: #86d67f; // green group member name
 historyPeer2NameFgSelected: #ffffff; // green group member name in a selected message
-historyPeer2UserpicBg: #7bc862; // green userpic background
+historyPeer2UserpicBg: #9ad164; // green userpic background
 historyPeer3NameFg: #e4c054; // yellow group member name
 historyPeer3NameFgSelected: #ffffff; // yellow group member name in a selected message
-historyPeer3UserpicBg: #ccad4f; // yellow userpic background
+historyPeer3UserpicBg: #e5ca77; // yellow userpic background (actually unused)
 historyPeer4NameFg: #68c7f3; // blue group member name
 historyPeer4NameFgSelected: #ffffff; // blue group member name in a selected message
-historyPeer4UserpicBg: #65aadd; // blue userpic background
+historyPeer4UserpicBg: #5caffa; // blue userpic background
 historyPeer5NameFg: #b383f3; // purple group member name
 historyPeer5NameFgSelected: #ffffff; // purple group member name in a selected message
-historyPeer5UserpicBg: #a695e7; // purple userpic background
+historyPeer5UserpicBg: #b694f9; // purple userpic background
 historyPeer6NameFg: #e16794; // pink group member name
 historyPeer6NameFgSelected: #ffffff; // pink group member name in a selected message
-historyPeer6UserpicBg: #ee7aae; // pink userpic background
+historyPeer6UserpicBg: #ff8aac; // pink userpic background
 historyPeer7NameFg: #57c9e0; // sea group member name
 historyPeer7NameFgSelected: #ffffff; // sea group member name in a selected message
-historyPeer7UserpicBg: #c3c49e; // sea userpic background
+historyPeer7UserpicBg: #5bcbe3; // sea userpic background
 historyPeer8NameFg: #efb05d; // orange group member name
 historyPeer8NameFgSelected: #ffffff; // orange group member name in a selected message
-historyPeer8UserpicBg: #eda86c; // orange userpic background
+historyPeer8UserpicBg: #febb5b; // orange userpic background
 historyPeerUserpicFg: windowFgActive; // default userpic initials
 historyScrollBarBg: #8989897a; // scroll bar current rectangle, the bar itself in the chat view (adjusted)
 historyScrollBarBgOver: #6b6b6bbc; // scroll bar current rectangle with mouse over it in the chat view (adjusted)
 historyScrollBg: #5f5f5f4c; // scroll bar background (adjusted)
 historyScrollBgOver: #6262626b; // scroll bar background with mouse over the scroll bar (adjusted)
+historyPeer1UserpicBg2: #d45246; // the second red userpic background
+historyPeer2UserpicBg2: #46ba43; // the second green userpic background
+historyPeer3UserpicBg2: #e5ca77; // the second yellow userpic background (actually unused)
+historyPeer4UserpicBg2: #408acf; // the second blue userpic background
+historyPeer5UserpicBg2: #6c61df; // the second purple userpic background
+historyPeer6UserpicBg2: #d95574; // the second pink userpic background
+historyPeer7UserpicBg2: #359ad4; // the second sea userpic background
+historyPeer8UserpicBg2: #f68136; // the second orange userpic background
+historyPeerSavedMessagesBg2: historyPeer4UserpicBg2; // the second saved messages userpic background
 msgInBg: #33393f; // inbox message background
 msgInBgSelected: #8f8a52; // inbox selected message background (and background of selected text in those messages)
 msgOutBg: #2a2f33; // outbox message background
@@ -456,12 +465,3 @@ sideBarIconFg: #8d939e; // filters side bar icon
 sideBarIconFgActive: #d6d08b; // filters side bar active item icon
 sideBarBadgeBg: #d6d08b; // filters side bar badge background
 sideBarBadgeBgMuted: #8d939e; // filters side bar unimportant badge background
-settingsIconBg1: #f06964; // red settings icon background
-settingsIconBg2: #6dc534; // green settings icon background
-settingsIconBg3: #ed9f20; // light-orange settings icon background
-settingsIconBg4: #56b3f5; // light-blue settings icon background
-settingsIconBg5: #7595ff; // dark-blue settings icon background
-settingsIconBg6: #b580e2; // purple settings icon background
-settingsIconBg8: #f2925b; // dark-orange settings icon background
-settingsIconBgArchive: #9da2b0; // archive main menu icon background
-settingsIconFg: #ff0000; // settings icon shape
