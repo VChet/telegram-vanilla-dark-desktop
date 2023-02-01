@@ -1,13 +1,12 @@
 import archiver from "archiver";
 import { createCanvas } from "canvas";
-import { createWriteStream } from "fs";
-import { readFile, writeFile } from "fs/promises";
 import { green, red, yellow } from "picocolors";
-
+import { readFile, writeFile } from "fs/promises";
+import { createWriteStream } from "fs";
 import { version } from "../package.json";
 import mappings from "./mappings";
 import themes from "./themes";
-import { Theme } from "./types/Theme";
+import type { Theme } from "./types/Theme";
 
 async function generatePalette({ name, constants }: Theme): Promise<void> {
   const originalPalette: string = await readFile("./src/palettes/original.tdesktop-palette", "utf8");
