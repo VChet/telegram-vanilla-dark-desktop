@@ -14,17 +14,17 @@
 ## Preview
 
 <div align="center">
-  <a href="./images/aqua.png">
-    <img src="./images/aqua.png" alt="aqua theme" width="48%">
+  <a href="./meta/aqua.png">
+    <img src="./meta/aqua.png" alt="aqua theme" width="48%">
   </a>
-  <a href="./images/cream.png">
-    <img src="./images/cream.png" alt="cream theme" width="48%">
+  <a href="./meta/cream.png">
+    <img src="./meta/cream.png" alt="cream theme" width="48%">
   </a>
-  <a href="./images/green.png">
-    <img src="./images/green.png" alt="green theme" width="48%">
+  <a href="./meta/green.png">
+    <img src="./meta/green.png" alt="green theme" width="48%">
   </a>
-  <a href="./images/red.png">
-    <img src="./images/red.png" alt="red theme" width="48%">
+  <a href="./meta/red.png">
+    <img src="./meta/red.png" alt="red theme" width="48%">
   </a>
   <a href="https://t.me/addtheme/vanilla_dark_aqua">
     <img src="https://img.shields.io/badge/install-aqua_theme-77BABC.svg" alt="install aqua theme">
