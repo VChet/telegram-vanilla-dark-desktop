@@ -55,7 +55,7 @@ function buildTheme({ name }: Theme) {
   });
 }
 
-(async () => {
+async function main() {
   const themeInput: string | undefined = process.argv[2];
   const availableThemes = themes.map((theme) => theme.name).join(", ");
 
@@ -82,4 +82,6 @@ function buildTheme({ name }: Theme) {
       console.log(yellow(`Available themes: ${availableThemes}`));
     }
   }
-})();
+}
+
+main().catch(console.error);
