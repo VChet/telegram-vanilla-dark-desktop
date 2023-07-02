@@ -1,4 +1,4 @@
-import { Theme } from "./types/Theme";
+import type { Theme } from "./types/Theme";
 
 type HEX = `#${string}`;
 
@@ -9,7 +9,7 @@ const common: Record<string, HEX> = {
   TRANSPARENT: "#00000000"
 };
 
-const themes: Array<Theme> = [{
+const themes: Theme[] = [{
   name: "Aqua",
   constants: {
     ...common,

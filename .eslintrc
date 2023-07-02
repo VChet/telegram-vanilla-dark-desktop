@@ -1,7 +1,7 @@
 {
   "root": true,
   "parserOptions": {
-    "ecmaVersion": 2022,
+    "ecmaVersion": 2023,
     "project": ["./tsconfig.json"]
   },
   "extends": [
@@ -26,6 +26,10 @@
     "operator-linebreak": ["error", "after"],
     "@typescript-eslint/comma-dangle": ["error", "never"],
     "@typescript-eslint/quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/array-type": "error",
+    "@typescript-eslint/return-await": "error",
+    "@typescript-eslint/consistent-indexed-object-style": "error",
     "import/order": ["error", { "newlines-between": "never", "groups": [
       "external",
       "builtin",
