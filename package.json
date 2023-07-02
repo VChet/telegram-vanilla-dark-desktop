@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Dark theme for desktop telegram app",
   "author": "VChet",
-  "license": "CC-BY-SA-4.0",
+  "license": "MIT",
   "homepage": "https://github.com/VChet/telegram-vanilla-dark-desktop#readme",
   "repository": {
     "type": "git",
