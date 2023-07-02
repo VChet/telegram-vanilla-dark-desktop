@@ -1,10 +1,10 @@
 <p align="center">
   <img alt="Telegram Vanilla Dark" src="https://raw.githubusercontent.com/VChet/Telegram-Vanilla-Dark-Web/master/images/logo.png" width="580"><br/>
-  <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/tags">
-    <img src="https://img.shields.io/github/tag/VChet/Telegram-Vanilla-Dark-Desktop.svg?label=version" alt="Version">
+  <a href="https://github.com/VChet/telegram-vanilla-dark-desktop/tags">
+    <img src="https://img.shields.io/github/tag/VChet/telegram-vanilla-dark-desktop.svg?label=version" alt="Version">
   </a>
-  <a href="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/actions?query=workflow%3Aeslint">
-    <img src="https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/workflows/eslint/badge.svg?branch=master" alt="eslint">
+  <a href="https://github.com/VChet/telegram-vanilla-dark-desktop/actions?query=workflow%3Aeslint">
+    <img src="https://github.com/VChet/telegram-vanilla-dark-desktop/workflows/eslint/badge.svg?branch=master" alt="eslint">
   </a>
   <a href="https://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
@@ -42,7 +42,7 @@
 
 ## Development
 
-1. [Fork](https://github.com/VChet/Telegram-Vanilla-Dark-Desktop/fork) and download this repository
+1. [Fork](https://github.com/VChet/telegram-vanilla-dark-desktop/fork) and download this repository
 1. Install [Node.js](https://nodejs.org/)
 1. Install dependencies `npm install`
 1. Change colors in [one of the themes or add your own](/src/themes.ts)
