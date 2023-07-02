@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Telegram Vanilla Dark" src="https://raw.githubusercontent.com/VChet/Telegram-Vanilla-Dark-Web/master/images/logo.png" width="580"><br/>
+  <img alt="Telegram Vanilla Dark" src="./meta/logo.png" width="580"><br/>
   <a href="https://github.com/VChet/telegram-vanilla-dark-desktop/tags">
     <img src="https://img.shields.io/github/tag/VChet/telegram-vanilla-dark-desktop.svg?label=version" alt="Version">
   </a>
@@ -49,8 +49,10 @@
 1. Change or add theme constants in [mappings](/src/mappings.ts)
 1. Generate theme with `npm run generate <theme-name>`
 1. Check generated theme in Telegram.
+
+   ```txt
+   Settings > Chat Settings > Create new theme > IMPORT EXISTING THEME > <palette-file>
    ```
-   Settings > Chat Settings > Create new theme > Import existing theme > <palette-file>
-   ```
+
 1. Commit and push your changes
 1. Make a pull request
