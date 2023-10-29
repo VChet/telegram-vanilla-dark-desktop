@@ -202,8 +202,8 @@ historyFileNameOutFg: historyTextOutFg; // outbox media filename text
 historyFileNameOutFgSelected: #ffffff; // outbox media filename text in a selected message
 historyOutIconFg: #e2d59d; // outbox message tick / double tick icon
 historyOutIconFgSelected: #ffffff; // outbox message tick / double tick icon in a selected message
-historyIconFgInverted: #e2d59d; // media message tick / double tick icon (like in sent photo)
-historySendingOutIconFg: #9eface; // outbox sending message icon (clock)
+historyIconFgInverted: windowFgActive; // media message tick / double tick icon (like in sent photo)
+historySendingOutIconFg: #f9edd2; // outbox sending message icon (clock)
 historySendingInIconFg: #76838b; // inbox sending message icon (clock) (like in sent messages to yourself or in sent messages to a channel)
 historySendingInvertedIconFg: #ffffffc8; // media sending message icon (clock) (like in sent photo)
 historyCallArrowInFg: #bab27b; // received phone call arrow
@@ -465,3 +465,5 @@ sideBarIconFg: #8d939e; // filters side bar icon
 sideBarIconFgActive: #d6d08b; // filters side bar active item icon
 sideBarBadgeBg: #d6d08b; // filters side bar badge background
 sideBarBadgeBgMuted: #8d939e; // filters side bar unimportant badge background
+statisticsChartInactive: #313a43d8; // inactive area in footer of statistic charts
+statisticsChartActive: #596879d8; // sides in footer of statistic charts
