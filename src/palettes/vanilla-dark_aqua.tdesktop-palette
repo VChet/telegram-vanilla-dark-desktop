@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Aqua (1.0.1)
+// Telegram Vanilla Dark Aqua (1.0.2)
 TEXT: #AAAAAA;
 LIGHT: #CCCCCC;
 WHITE: #FFFFFF;
@@ -215,8 +215,8 @@ historyFileNameOutFg: historyTextOutFg; // outbox media filename text
 historyFileNameOutFgSelected: #ffffff; // outbox media filename text in a selected message
 historyOutIconFg: MAIN; // outbox message tick / double tick icon
 historyOutIconFgSelected: #ffffff; // outbox message tick / double tick icon in a selected message
-historyIconFgInverted: historyOutIconFg; // media message tick / double tick icon (like in sent photo)
-historySendingOutIconFg: #9eface; // outbox sending message icon (clock)
+historyIconFgInverted: windowFgActive; // media message tick / double tick icon (like in sent photo)
+historySendingOutIconFg: #f9edd2; // outbox sending message icon (clock)
 historySendingInIconFg: #76838b; // inbox sending message icon (clock) (like in sent messages to yourself or in sent messages to a channel)
 historySendingInvertedIconFg: #ffffffc8; // media sending message icon (clock) (like in sent photo)
 historyCallArrowInFg: MAIN; // received phone call arrow
@@ -478,3 +478,5 @@ sideBarIconFg: LIGHT; // filters side bar icon
 sideBarIconFgActive: MAIN; // filters side bar active item icon
 sideBarBadgeBg: MAIN; // filters side bar badge background
 sideBarBadgeBgMuted: MAIN_DARK; // filters side bar unimportant badge background
+statisticsChartInactive: #313a43d8; // inactive area in footer of statistic charts
+statisticsChartActive: #596879d8; // sides in footer of statistic charts
