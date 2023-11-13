@@ -1,4 +1,4 @@
-// Telegram Vanilla Dark Cream (1.0.2)
+// Telegram Vanilla Dark Cream (1.0.3)
 TEXT: #AAAAAA;
 LIGHT: #CCCCCC;
 WHITE: #FFFFFF;
@@ -216,8 +216,8 @@ historyFileNameOutFgSelected: #ffffff; // outbox media filename text in a select
 historyOutIconFg: MAIN; // outbox message tick / double tick icon
 historyOutIconFgSelected: #ffffff; // outbox message tick / double tick icon in a selected message
 historyIconFgInverted: windowFgActive; // media message tick / double tick icon (like in sent photo)
-historySendingOutIconFg: #f9edd2; // outbox sending message icon (clock)
-historySendingInIconFg: #76838b; // inbox sending message icon (clock) (like in sent messages to yourself or in sent messages to a channel)
+historySendingOutIconFg: MAIN_DARK; // outbox sending message icon (clock)
+historySendingInIconFg: MAIN_DARK; // inbox sending message icon (clock) (like in sent messages to yourself or in sent messages to a channel)
 historySendingInvertedIconFg: #ffffffc8; // media sending message icon (clock) (like in sent photo)
 historyCallArrowInFg: MAIN; // received phone call arrow
 historyCallArrowInFgSelected: #ffffff; // received phone call arrow in a selected message
