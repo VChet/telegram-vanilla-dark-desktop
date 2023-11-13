@@ -73,6 +73,8 @@ const mappings: Record<string, string> = {
   historyUnreadBarFg: "MAIN_DARK",
   historyOutIconFg: "MAIN",
   historyIconFgInverted: "historyOutIconFg",
+  historySendingOutIconFg: "MAIN_DARK",
+  historySendingInIconFg: "MAIN_DARK",
   historyComposeButtonBgRipple: "GRAY_SELECTION",
   msgInBg: "GRAY_LIGHT",
   msgOutBg: "msgInBg",
