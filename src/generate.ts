@@ -2,7 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { createWriteStream } from "node:fs";
 import process from "node:process";
 import archiver from "archiver";
-import { green, red, yellow } from "picocolors";
+import colors from "picocolors";
 import { PNG } from "pngjs";
 import { version } from "../package.json";
 import mappings from "./mappings";
@@ -82,8 +82,8 @@ async function main() {
   const availableThemes = themes.map((theme) => theme.name).join(", ");
 
   if (!themeInput) {
-    console.log(red("Aborting: theme name not specified."));
-    console.log(yellow(`Available themes: ${availableThemes}`));
+    console.log(colors.red("Aborting: theme name not specified."));
+    console.log(colors.yellow(`Available themes: ${availableThemes}`));
     process.exit();
   }
 
@@ -92,16 +92,16 @@ async function main() {
       await Promise.all([generatePalette(theme), generateBackground(theme)]);
       await buildTheme(theme);
     }));
-    console.log(green("Generation finished!"));
+    console.log(colors.green("Generation finished!"));
   } else {
     const themeData = themes.find((theme) => theme.name.toLowerCase() === themeInput.toLowerCase());
     if (themeData) {
       await Promise.all([generatePalette(themeData), generateBackground(themeData)]);
       await buildTheme(themeData);
-      console.log(green("Generation finished!"));
+      console.log(colors.green("Generation finished!"));
     } else {
-      console.log(red("Aborting: incorrect theme name."));
-      console.log(yellow(`Available themes: ${availableThemes}`));
+      console.log(colors.red("Aborting: incorrect theme name."));
+      console.log(colors.yellow(`Available themes: ${availableThemes}`));
     }
   }
 }

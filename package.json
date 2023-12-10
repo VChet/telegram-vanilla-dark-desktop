@@ -14,18 +14,18 @@
     "url": "https://github.com/VChet/telegram-vanilla-dark-desktop/issues"
   },
   "scripts": {
-    "generate": "ts-node src/generate.ts",
+    "generate": "tsx src/generate.ts",
     "build": "npm run generate all",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "preversion": "npm run generate all",
-    "version": "ts-node src/bump.ts"
+    "version": "tsx src/bump.ts"
   },
   "dependencies": {
     "archiver": "^6.0.1",
     "picocolors": "^1.0.0",
     "pngjs": "^7.0.0",
-    "ts-node": "^10.9.1"
+    "tsx": "^4.6.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.4.3",
