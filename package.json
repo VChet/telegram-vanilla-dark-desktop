@@ -1,5 +1,6 @@
 {
   "name": "telegram-vanilla-dark-desktop",
+  "type": "module",
   "version": "1.0.3",
   "description": "Dark theme for desktop telegram app",
   "author": "VChet",
@@ -15,7 +16,7 @@
   "scripts": {
     "generate": "ts-node src/generate.ts",
     "build": "npm run generate all",
-    "lint": "eslint --ext js,ts ./src",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "preversion": "npm run generate all",
     "version": "ts-node src/bump.ts"
@@ -27,15 +28,11 @@
     "ts-node": "^10.9.1"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.4.3",
     "@types/archiver": "^6.0.1",
     "@types/node": "^20.9.0",
     "@types/pngjs": "^6.0.4",
-    "@typescript-eslint/eslint-plugin": "^6.11.0",
-    "@typescript-eslint/parser": "^6.11.0",
-    "eslint": "^8.53.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.0",
+    "eslint": "^8.55.0",
     "typescript": "^5.2.2"
   }
 }

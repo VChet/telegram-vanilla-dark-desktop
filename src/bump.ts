@@ -1,6 +1,7 @@
-import fs from "fs";
-import path from "path";
-import { execSync } from "child_process";
+import fs from "node:fs";
+import path from "node:path";
+import { execSync } from "node:child_process";
+import process from "node:process";
 
 const palettesDir = path.join(__dirname, "palettes");
 const files = fs.readdirSync(palettesDir, { withFileTypes: true })

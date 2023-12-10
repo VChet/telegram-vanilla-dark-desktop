@@ -1,8 +1,9 @@
+import { readFile, writeFile } from "node:fs/promises";
+import { createWriteStream } from "node:fs";
+import process from "node:process";
 import archiver from "archiver";
 import { green, red, yellow } from "picocolors";
 import { PNG } from "pngjs";
-import { readFile, writeFile } from "fs/promises";
-import { createWriteStream } from "fs";
 import { version } from "../package.json";
 import mappings from "./mappings";
 import themes from "./themes";
@@ -27,9 +28,9 @@ function hexToRgb(hex: HEX): RGB {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   if (!result) return { r: 0, g: 0, b: 0 };
   return {
-    r: parseInt(result[1], 16),
-    g: parseInt(result[2], 16),
-    b: parseInt(result[3], 16)
+    r: Number.parseInt(result[1], 16),
+    g: Number.parseInt(result[2], 16),
+    b: Number.parseInt(result[3], 16)
   };
 }
 
@@ -87,7 +88,7 @@ async function main() {
   }
 
   if (themeInput === "all") {
-    await Promise.all(themes.map(async(theme) => {
+    await Promise.all(themes.map(async (theme) => {
       await Promise.all([generatePalette(theme), generateBackground(theme)]);
       await buildTheme(theme);
     }));
