@@ -1,12 +1,12 @@
 import archiver from "archiver";
-import { createCanvas } from "canvas";
 import { green, red, yellow } from "picocolors";
+import { PNG } from "pngjs";
 import { readFile, writeFile } from "fs/promises";
 import { createWriteStream } from "fs";
 import { version } from "../package.json";
 import mappings from "./mappings";
 import themes from "./themes";
-import type { Theme } from "./types/Theme";
+import type { HEX, RGB, Theme } from "./types";
 
 async function generatePalette({ name, constants }: Theme): Promise<void> {
   const originalPalette: string = await readFile("./src/palettes/original.tdesktop-palette", "utf8");
@@ -23,13 +23,34 @@ async function generatePalette({ name, constants }: Theme): Promise<void> {
   return writeFile(`./src/palettes/vanilla-dark_${name.toLowerCase()}.tdesktop-palette`, result, "utf8");
 }
 
+function hexToRgb(hex: HEX): RGB {
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  if (!result) return { r: 0, g: 0, b: 0 };
+  return {
+    r: parseInt(result[1], 16),
+    g: parseInt(result[2], 16),
+    b: parseInt(result[3], 16)
+  };
+}
+
 function generateBackground({ name, constants }: Theme): Promise<void> {
   const size = 16;
-  const canvas = createCanvas(size, size);
-  const context = canvas.getContext("2d");
-  context.fillStyle = constants.GRAY_DARK;
-  context.fillRect(0, 0, size, size);
-  return writeFile(`./src/backgrounds/${name.toLowerCase()}.png`, canvas.toBuffer("image/png"));
+  const png = new PNG({ width: size, height: size });
+  const { r, g, b } = hexToRgb(constants.GRAY_DARK);
+  for (let y = 0; y < png.height; y++) {
+    for (let x = 0; x < png.width; x++) {
+      const idx = (png.width * y + x) << 2;
+      png.data[idx] = r;
+      png.data[idx + 1] = g;
+      png.data[idx + 2] = b;
+      png.data[idx + 3] = 255;
+    }
+  }
+
+  return new Promise((resolve, reject) => {
+    const output = createWriteStream(`./src/backgrounds/${name.toLowerCase()}.png`);
+    png.pack().pipe(output).on("finish", resolve).on("error", reject);
+  });
 }
 
 function buildTheme({ name }: Theme) {

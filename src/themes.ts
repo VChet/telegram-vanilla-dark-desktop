@@ -1,6 +1,4 @@
-import type { Theme } from "./types/Theme";
-
-type HEX = `#${string}`;
+import type { HEX, Theme } from "./types";
 
 const common: Record<string, HEX> = {
   TEXT: "#AAAAAA",
