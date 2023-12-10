@@ -3,8 +3,8 @@
   <a href="https://github.com/VChet/telegram-vanilla-dark-desktop/tags">
     <img src="https://img.shields.io/github/tag/VChet/telegram-vanilla-dark-desktop.svg?label=version" alt="Version">
   </a>
-  <a href="https://github.com/VChet/telegram-vanilla-dark-desktop/actions?query=workflow%3Aeslint">
-    <img src="https://github.com/VChet/telegram-vanilla-dark-desktop/workflows/eslint/badge.svg?branch=master" alt="eslint">
+  <a href="https://github.com/VChet/telegram-vanilla-dark-desktop/actions/workflows/test.yml">
+    <img src="https://github.com/VChet/telegram-vanilla-dark-desktop/actions/workflows/test.yml/badge.svg" alt="eslint">
   </a>
   <a href="https://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
