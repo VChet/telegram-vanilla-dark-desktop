@@ -1,7 +1,7 @@
 {
   "name": "telegram-vanilla-dark-desktop",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Dark theme for desktop telegram app",
   "author": "VChet",
   "license": "MIT",
