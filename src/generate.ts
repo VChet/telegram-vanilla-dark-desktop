@@ -13,9 +13,7 @@ async function generatePalette({ name, constants }: Theme): Promise<void> {
   const originalPalette: string = await readFile("./src/palettes/original.tdesktop-palette", "utf8");
   const lines: string[] = originalPalette.split("\n").map((line) => {
     const constant = line.substring(0, line.indexOf(":"));
-    return mappings[constant] ?
-      line.replace(/#[^;]+/gm, mappings[constant]) :
-      line;
+    return mappings[constant] ? line.replace(/#[^;]+/g, mappings[constant]) : line;
   });
   const themeMappings = `${Object.entries(constants).map((line) => line.join(": ")).join(";\n")};`;
 

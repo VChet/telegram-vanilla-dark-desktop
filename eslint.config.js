@@ -1,6 +1,7 @@
 import antfu from "@antfu/eslint-config";
 
 export default antfu({
+  toml: false,
   rules: {
     "no-console": "off",
     "style/arrow-parens": ["error", "always"],
