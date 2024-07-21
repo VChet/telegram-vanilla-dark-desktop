@@ -1,18 +1,20 @@
-import antfu from "@antfu/eslint-config";
+import standard from "eslint-config-standard";
+import { FlatCompat } from "@eslint/eslintrc";
 
-export default antfu({
-  toml: false,
-  rules: {
-    "no-console": "off",
-    "style/arrow-parens": ["error", "always"],
-    "style/brace-style": ["error", "1tbs"],
-    "style/comma-dangle": ["error", "never"],
-    "style/max-statements-per-line": "off",
-    "style/operator-linebreak": ["error", "after"],
-    "style/quotes": ["error", "double"],
-    "style/semi": ["error", "always"],
-    "antfu/if-newline": "off",
-    "ts/consistent-type-definitions": "off",
-    "yaml/quotes": ["error", { prefer: "double" }]
+const compat = new FlatCompat();
+
+export default [
+  ...compat.config(standard),
+  {
+    languageOptions: {
+      parserOptions: { ecmaVersion: "latest" }
+    },
+    rules: {
+      "max-len": ["warn", { code: 120 }],
+      "no-console": ["warn", { allow: ["error"] }],
+      quotes: ["error", "double"],
+      semi: ["error", "always"],
+      "space-before-function-paren": ["error", "never"]
+    }
   }
-});
+];
