@@ -1,20 +1,13 @@
-import standard from "eslint-config-standard";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const compat = new FlatCompat();
+import neostandard from "neostandard";
 
 export default [
-  ...compat.config(standard),
+  ...neostandard(),
   {
-    languageOptions: {
-      parserOptions: { ecmaVersion: "latest" }
-    },
     rules: {
-      "max-len": ["warn", { code: 120 }],
-      "no-console": ["warn", { allow: ["error"] }],
-      quotes: ["error", "double"],
-      semi: ["error", "always"],
-      "space-before-function-paren": ["error", "never"]
+      "@stylistic/comma-dangle": ["error", "never"],
+      "@stylistic/quotes": ["error", "double"],
+      "@stylistic/semi": ["error", "always"],
+      "@stylistic/space-before-function-paren": ["error", "never"]
     }
   }
 ];
