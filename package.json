@@ -19,8 +19,10 @@
   "scripts": {
     "generate": "tsx src/generate.ts",
     "build": "npm run generate all",
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:ts": "tsc --noEmit",
+    "lint:js": "eslint .",
+    "lint:js:fix": "npm run lint -- --fix",
+    "lint:all": "npm run lint:ts && npm run lint:js",
     "preversion": "npm run generate all",
     "version": "tsx src/bump.ts"
   },
@@ -28,13 +30,13 @@
     "archiver": "^7.0.1",
     "picocolors": "^1.0.1",
     "pngjs": "^7.0.0",
-    "tsx": "^4.16.2"
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
   },
   "devDependencies": {
     "@types/archiver": "^6.0.2",
     "@types/pngjs": "^6.0.5",
     "eslint": "^9.8.0",
-    "neostandard": "^0.11.1",
-    "typescript": "^5.5.3"
+    "neostandard": "^0.11.1"
   }
 }
