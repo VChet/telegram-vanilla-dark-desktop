@@ -6,6 +6,7 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "strict": true,
+    "skipLibCheck": true,
     "noUnusedLocals": true,
     "esModuleInterop": true
   },

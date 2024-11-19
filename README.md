@@ -44,7 +44,8 @@
 
 1. [Fork](https://github.com/VChet/telegram-vanilla-dark-desktop/fork) and download this repository
 1. Install [Node.js](https://nodejs.org/)
-1. Install dependencies `npm install`
+1. Install [pnpm](https://pnpm.io/)
+1. Install dependencies `pnpm install`
 1. Change colors in [one of the themes or add your own](/src/themes.ts)
 1. Change or add theme constants in [mappings](/src/mappings.ts)
 1. Generate theme with `npm run generate <theme-name>`
