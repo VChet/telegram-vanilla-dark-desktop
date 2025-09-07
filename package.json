@@ -17,21 +17,20 @@
     "node": ">=20"
   },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "generate": "tsx src/generate.ts",
+    "preinstall": "pnpx only-allow pnpm",
+    "generate": "node src/generate.ts",
     "build": "npm run generate all",
     "lint:ts": "tsc --noEmit",
     "lint:js": "eslint .",
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:all": "npm run lint:ts && npm run lint:js",
     "preversion": "npm run generate all",
-    "version": "tsx src/bump.ts"
+    "version": "node src/bump.ts"
   },
   "dependencies": {
     "archiver": "^7.0.1",
     "picocolors": "^1.1.1",
     "pngjs": "^7.0.0",
-    "tsx": "^4.20.5",
     "typescript": "^5.9.2"
   },
   "devDependencies": {
@@ -50,14 +49,12 @@
       "es-iterator-helpers": "npm:@nolyfill/es-iterator-helpers@^1",
       "hasown": "npm:@nolyfill/hasown@^1",
       "is-core-module": "npm:@nolyfill/is-core-module@^1",
-      "isarray": "npm:@nolyfill/isarray@^1",
       "object.assign": "npm:@nolyfill/object.assign@^1",
       "object.entries": "npm:@nolyfill/object.entries@^1",
       "object.fromentries": "npm:@nolyfill/object.fromentries@^1",
       "object.values": "npm:@nolyfill/object.values@^1",
       "safe-buffer": "npm:@nolyfill/safe-buffer@^1",
-      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@^1",
-      "string.prototype.repeat": "npm:@nolyfill/string.prototype.repeat@^1"
+      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@^1"
     }
   }
 }

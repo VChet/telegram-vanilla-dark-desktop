@@ -4,9 +4,9 @@ import process from "node:process";
 import archiver from "archiver";
 import colors from "picocolors";
 import { PNG } from "pngjs";
-import { version } from "../package.json";
-import mappings from "./mappings";
-import themes from "./themes";
+import mappings from "./mappings.ts";
+import themes from "./themes.ts";
+import pkg from "../package.json" with { type: "json" };
 import type { HEX, RGB, Theme } from "./types";
 
 async function generatePalette({ name, constants }: Theme): Promise<void> {
@@ -17,7 +17,7 @@ async function generatePalette({ name, constants }: Theme): Promise<void> {
   });
   const themeMappings = `${Object.entries(constants).map((line) => line.join(": ")).join(";\n")};`;
 
-  let result = `// Telegram Vanilla Dark ${name} (${version})\n`;
+  let result = `// Telegram Vanilla Dark ${name} (${pkg.version})\n`;
   result += lines.join("\n").replace("{{THEME}}", themeMappings);
   return writeFile(`./src/palettes/vanilla-dark_${name.toLowerCase()}.tdesktop-palette`, result, "utf8");
 }
