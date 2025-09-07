@@ -31,13 +31,33 @@
     "archiver": "^7.0.1",
     "picocolors": "^1.1.1",
     "pngjs": "^7.0.0",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.3"
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
   },
   "devDependencies": {
     "@types/archiver": "^6.0.3",
     "@types/pngjs": "^6.0.5",
-    "eslint": "^9.24.0",
-    "neostandard": "^0.12.1"
+    "eslint": "^9.35.0",
+    "neostandard": "^0.12.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "array-includes": "npm:@nolyfill/array-includes@^1",
+      "array.prototype.findlast": "npm:@nolyfill/array.prototype.findlast@^1",
+      "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@^1",
+      "array.prototype.flatmap": "npm:@nolyfill/array.prototype.flatmap@^1",
+      "array.prototype.tosorted": "npm:@nolyfill/array.prototype.tosorted@^1",
+      "es-iterator-helpers": "npm:@nolyfill/es-iterator-helpers@^1",
+      "hasown": "npm:@nolyfill/hasown@^1",
+      "is-core-module": "npm:@nolyfill/is-core-module@^1",
+      "isarray": "npm:@nolyfill/isarray@^1",
+      "object.assign": "npm:@nolyfill/object.assign@^1",
+      "object.entries": "npm:@nolyfill/object.entries@^1",
+      "object.fromentries": "npm:@nolyfill/object.fromentries@^1",
+      "object.values": "npm:@nolyfill/object.values@^1",
+      "safe-buffer": "npm:@nolyfill/safe-buffer@^1",
+      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@^1",
+      "string.prototype.repeat": "npm:@nolyfill/string.prototype.repeat@^1"
+    }
   }
 }

@@ -86,7 +86,7 @@ async function main() {
   }
 
   if (themeInput === "all") {
-    await Promise.all(themes.map(async (theme) => {
+    await Promise.all(themes.map(async(theme) => {
       await Promise.all([generatePalette(theme), generateBackground(theme)]);
       await buildTheme(theme);
     }));
