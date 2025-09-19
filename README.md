@@ -1,14 +1,12 @@
 <p align="center">
   <img alt="Telegram Vanilla Dark" src="./meta/logo.png" width="580"><br/>
   <a href="https://github.com/VChet/telegram-vanilla-dark-desktop/tags">
-    <img src="https://img.shields.io/github/tag/VChet/telegram-vanilla-dark-desktop.svg?label=version" alt="Version">
+    <img src="https://img.shields.io/github/tag/VChet/telegram-vanilla-dark-desktop?label=version&style=flat-square" alt="Version">
   </a>
-  <a href="https://github.com/VChet/telegram-vanilla-dark-desktop/actions/workflows/build.yml">
-    <img src="https://github.com/VChet/telegram-vanilla-dark-desktop/actions/workflows/build.yml/badge.svg" alt="build">
+  <a href="https://github.com/VChet/telegram-vanilla-dark-desktop/actions/workflows/build.yaml">
+    <img src="https://img.shields.io/github/actions/workflow/status/VChet/telegram-vanilla-dark-desktop/.github/workflows/build.yaml?style=flat-square" alt="build">
   </a>
-  <a href="https://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
-  </a>
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square" alt="PRs welcome">
 </p>
 
 ## Preview
@@ -27,16 +25,16 @@
     <img src="./meta/rose.png" alt="rose theme" width="48%">
   </a>
   <a href="https://t.me/addtheme/vanilla_dark_aqua">
-    <img src="https://img.shields.io/badge/install-aqua_theme-77BABC.svg" alt="install aqua theme">
+    <img src="https://img.shields.io/badge/install-aqua_theme-77BABC" alt="install aqua theme">
   </a>
   <a width="23%" href="https://t.me/addtheme/vanilla_dark_cream">
-    <img src="https://img.shields.io/badge/install-cream_theme-B9B384.svg" alt="install cream theme">
+    <img src="https://img.shields.io/badge/install-cream_theme-B9B384" alt="install cream theme">
   </a>
   <a width="23%" href="https://t.me/addtheme/vanilla_dark_mint">
-    <img src="https://img.shields.io/badge/install-mint_theme-63B97F.svg" alt="install mint theme">
+    <img src="https://img.shields.io/badge/install-mint_theme-63B97F" alt="install mint theme">
   </a>
   <a width="23%" href="https://t.me/addtheme/vanilla_dark_rose">
-    <img src="https://img.shields.io/badge/install-rose_theme-FF7B5D.svg" alt="install rose theme">
+    <img src="https://img.shields.io/badge/install-rose_theme-FF7B5D" alt="install rose theme">
   </a>
 </div>
 
