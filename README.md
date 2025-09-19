@@ -25,16 +25,16 @@
     <img src="./meta/rose.png" alt="rose theme" width="48%">
   </a>
   <a href="https://t.me/addtheme/vanilla_dark_aqua">
-    <img src="https://img.shields.io/badge/install-aqua_theme-77BABC" alt="install aqua theme">
+    <img src="https://img.shields.io/badge/install-aqua_theme-77BABC?style=flat-square" alt="install aqua theme">
   </a>
   <a width="23%" href="https://t.me/addtheme/vanilla_dark_cream">
-    <img src="https://img.shields.io/badge/install-cream_theme-B9B384" alt="install cream theme">
+    <img src="https://img.shields.io/badge/install-cream_theme-B9B384?style=flat-square" alt="install cream theme">
   </a>
   <a width="23%" href="https://t.me/addtheme/vanilla_dark_mint">
-    <img src="https://img.shields.io/badge/install-mint_theme-63B97F" alt="install mint theme">
+    <img src="https://img.shields.io/badge/install-mint_theme-63B97F?style=flat-square" alt="install mint theme">
   </a>
   <a width="23%" href="https://t.me/addtheme/vanilla_dark_rose">
-    <img src="https://img.shields.io/badge/install-rose_theme-FF7B5D" alt="install rose theme">
+    <img src="https://img.shields.io/badge/install-rose_theme-FF7B5D?style=flat-square" alt="install rose theme">
   </a>
 </div>
 
