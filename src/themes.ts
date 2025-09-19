@@ -27,41 +27,41 @@ const themes: Theme[] = [{
     ...common,
     MAIN_DARK: "#908B67",
     MAIN: "#B9B384",
-    MAIN_OVERLAY: "#B9B3844C",
+    MAIN_OVERLAY: "#B9B38426",
     MAIN_LIGHT: "#D0CA94",
-    GRAY_DARK: "#191919",
-    GRAY_DARK_TP: "#19191901",
-    GRAY: "#222222",
-    GRAY_LIGHT: "#272727",
-    GRAY_SELECTION: "#2C2C2C"
+    GRAY_DARK: "#1B1A17",
+    GRAY_DARK_TP: "#1B1A1701",
+    GRAY: "#201F1B",
+    GRAY_LIGHT: "#27261F",
+    GRAY_SELECTION: "#2C2B26"
   }
 }, {
-  name: "Green",
+  name: "Mint",
   constants: {
     ...common,
     MAIN_DARK: "#4B8B60",
     MAIN: "#63B97F",
     MAIN_OVERLAY: "#63B97F4C",
     MAIN_LIGHT: "#7AD08F",
-    GRAY_DARK: "#19191A",
-    GRAY_DARK_TP: "#19191A01",
-    GRAY: "#212122",
-    GRAY_LIGHT: "#2A2A2C",
-    GRAY_SELECTION: "#2F2F31"
+    GRAY_DARK: "#1B1B1C",
+    GRAY_DARK_TP: "#1B1B1C01",
+    GRAY: "#212121",
+    GRAY_LIGHT: "#2A2A2A",
+    GRAY_SELECTION: "#313131"
   }
 }, {
-  name: "Red",
+  name: "Rose",
   constants: {
     ...common,
-    MAIN_DARK: "#B35843",
+    MAIN_DARK: "#A95244",
     MAIN: "#FF7B5D",
-    MAIN_OVERLAY: "#FF7B5D4C",
+    MAIN_OVERLAY: "#FF7B5D26",
     MAIN_LIGHT: "#FF926D",
-    GRAY_DARK: "#262A2E",
-    GRAY_DARK_TP: "#262A2E01",
-    GRAY: "#2B3034",
-    GRAY_LIGHT: "#2F353A",
-    GRAY_SELECTION: "#33393E"
+    GRAY_DARK: "#1F1A18",
+    GRAY_DARK_TP: "#1F1A1801",
+    GRAY: "#26211E",
+    GRAY_LIGHT: "#2B2623",
+    GRAY_SELECTION: "#322B28"
   }
 }];
 

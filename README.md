@@ -20,11 +20,11 @@
   <a href="./meta/cream.png">
     <img src="./meta/cream.png" alt="cream theme" width="48%">
   </a>
-  <a href="./meta/green.png">
-    <img src="./meta/green.png" alt="green theme" width="48%">
+  <a href="./meta/mint.png">
+    <img src="./meta/mint.png" alt="mint theme" width="48%">
   </a>
-  <a href="./meta/red.png">
-    <img src="./meta/red.png" alt="red theme" width="48%">
+  <a href="./meta/rose.png">
+    <img src="./meta/rose.png" alt="rose theme" width="48%">
   </a>
   <a href="https://t.me/addtheme/vanilla_dark_aqua">
     <img src="https://img.shields.io/badge/install-aqua_theme-77BABC.svg" alt="install aqua theme">
@@ -32,11 +32,11 @@
   <a width="23%" href="https://t.me/addtheme/vanilla_dark_cream">
     <img src="https://img.shields.io/badge/install-cream_theme-B9B384.svg" alt="install cream theme">
   </a>
-  <a width="23%" href="https://t.me/addtheme/vanilla_dark_green">
-    <img src="https://img.shields.io/badge/install-green_theme-63B97F.svg" alt="install green theme">
+  <a width="23%" href="https://t.me/addtheme/vanilla_dark_mint">
+    <img src="https://img.shields.io/badge/install-mint_theme-63B97F.svg" alt="install mint theme">
   </a>
-  <a width="23%" href="https://t.me/addtheme/vanilla_dark_red">
-    <img src="https://img.shields.io/badge/install-red_theme-FF7B5D.svg" alt="install red theme">
+  <a width="23%" href="https://t.me/addtheme/vanilla_dark_rose">
+    <img src="https://img.shields.io/badge/install-rose_theme-FF7B5D.svg" alt="install rose theme">
   </a>
 </div>
 
