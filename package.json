@@ -36,7 +36,7 @@
   "devDependencies": {
     "@types/archiver": "^6.0.3",
     "@types/pngjs": "^6.0.5",
-    "eslint": "^9.35.0",
+    "eslint": "^9.36.0",
     "neostandard": "^0.12.2"
   },
   "pnpm": {
@@ -49,12 +49,14 @@
       "es-iterator-helpers": "npm:@nolyfill/es-iterator-helpers@^1",
       "hasown": "npm:@nolyfill/hasown@^1",
       "is-core-module": "npm:@nolyfill/is-core-module@^1",
+      "isarray": "npm:@nolyfill/isarray@^1",
       "object.assign": "npm:@nolyfill/object.assign@^1",
       "object.entries": "npm:@nolyfill/object.entries@^1",
       "object.fromentries": "npm:@nolyfill/object.fromentries@^1",
       "object.values": "npm:@nolyfill/object.values@^1",
       "safe-buffer": "npm:@nolyfill/safe-buffer@^1",
-      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@^1"
+      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@^1",
+      "string.prototype.repeat": "npm:@nolyfill/string.prototype.repeat@^1"
     }
   }
 }
