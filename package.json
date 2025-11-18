@@ -31,12 +31,12 @@
     "archiver": "^7.0.1",
     "picocolors": "^1.1.1",
     "pngjs": "^7.0.0",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@types/archiver": "^6.0.3",
+    "@types/archiver": "^7.0.0",
     "@types/pngjs": "^6.0.5",
-    "eslint": "^9.36.0",
+    "eslint": "^9.39.1",
     "neostandard": "^0.12.2"
   },
   "pnpm": {
