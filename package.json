@@ -24,8 +24,7 @@
     "lint:js": "eslint .",
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:all": "npm run lint:ts && npm run lint:js",
-    "preversion": "npm run generate all",
-    "version": "node src/bump.ts"
+    "release": "commit-and-tag-version --commit-all"
   },
   "dependencies": {
     "archiver": "^7.0.1",
@@ -35,6 +34,7 @@
   "devDependencies": {
     "@types/archiver": "^7.0.0",
     "@types/pngjs": "^6.0.5",
+    "commit-and-tag-version": "^12.6.1",
     "eslint": "^9.39.2",
     "neostandard": "^0.12.2"
   },

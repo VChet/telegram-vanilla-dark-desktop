@@ -1,0 +1,22 @@
+name: GitHub Release
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - name: Generate Changelog
+        id: release_notes
+        uses: yashanand1910/standard-release-notes@28752849855b451d0d2bee11a83a4da2d794ecf6 # v1.5.0
+        with:
+          version: ${{ github.ref }}
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
+        with:
+          tag_name: ${{ github.ref_name }}
+          body: ${{ steps.release_notes.outputs.release_notes }}
