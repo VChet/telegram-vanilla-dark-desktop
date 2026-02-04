@@ -14,7 +14,7 @@
     "url": "https://github.com/VChet/telegram-vanilla-dark-desktop/issues"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.13.0"
   },
   "scripts": {
     "preinstall": "pnpx only-allow pnpm",
@@ -29,14 +29,13 @@
   },
   "dependencies": {
     "archiver": "^7.0.1",
-    "picocolors": "^1.1.1",
     "pngjs": "^7.0.0",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@types/archiver": "^6.0.3",
+    "@types/archiver": "^7.0.0",
     "@types/pngjs": "^6.0.5",
-    "eslint": "^9.36.0",
+    "eslint": "^9.39.2",
     "neostandard": "^0.12.2"
   },
   "pnpm": {

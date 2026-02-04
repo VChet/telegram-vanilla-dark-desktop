@@ -1,8 +1,8 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { createWriteStream } from "node:fs";
+import { styleText } from "node:util";
 import process from "node:process";
 import archiver from "archiver";
-import colors from "picocolors";
 import { PNG } from "pngjs";
 import mappings from "./mappings.ts";
 import themes from "./themes.ts";
@@ -80,8 +80,8 @@ async function main() {
   const availableThemes = themes.map((theme) => theme.name).join(", ");
 
   if (!themeInput) {
-    console.log(colors.red("Aborting: theme name not specified."));
-    console.log(colors.yellow(`Available themes: ${availableThemes}`));
+    console.log(styleText("red", "Aborting: theme name not specified."));
+    console.log(styleText("yellow", `Available themes: ${availableThemes}`));
     process.exit();
   }
 
@@ -90,16 +90,16 @@ async function main() {
       await Promise.all([generatePalette(theme), generateBackground(theme)]);
       await buildTheme(theme);
     }));
-    console.log(colors.green("Generation finished!"));
+    console.log(styleText("green", "Generation finished!"));
   } else {
     const themeData = themes.find((theme) => theme.name.toLowerCase() === themeInput.toLowerCase());
     if (themeData) {
       await Promise.all([generatePalette(themeData), generateBackground(themeData)]);
       await buildTheme(themeData);
-      console.log(colors.green("Generation finished!"));
+      console.log(styleText("green", "Generation finished!"));
     } else {
-      console.log(colors.red("Aborting: incorrect theme name."));
-      console.log(colors.yellow(`Available themes: ${availableThemes}`));
+      console.log(styleText("red", "Aborting: incorrect theme name."));
+      console.log(styleText("yellow", `Available themes: ${availableThemes}`));
     }
   }
 }
