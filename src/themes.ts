@@ -1,6 +1,6 @@
 import type { HEX, Theme } from "./types";
 
-const common: Record<string, HEX> = {
+const common: Readonly<Record<string, HEX>> = {
   TEXT: "#AAAAAA",
   LIGHT: "#CCCCCC",
   WHITE: "#FFFFFF",
