@@ -4,15 +4,9 @@
   "version": "2.0.1",
   "description": "Dark theme for desktop telegram app",
   "author": "VChet",
+  "private": true,
   "license": "MIT",
-  "homepage": "https://github.com/VChet/telegram-vanilla-dark-desktop#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VChet/telegram-vanilla-dark-desktop.git"
-  },
-  "bugs": {
-    "url": "https://github.com/VChet/telegram-vanilla-dark-desktop/issues"
-  },
+  "packageManager": "pnpm@10.32.1",
   "engines": {
     "node": ">=22.13.0"
   },
@@ -34,9 +28,9 @@
   "devDependencies": {
     "@types/archiver": "^7.0.0",
     "@types/pngjs": "^6.0.5",
-    "commit-and-tag-version": "^12.6.1",
-    "eslint": "^9.39.2",
-    "neostandard": "^0.12.2"
+    "commit-and-tag-version": "^12.7.1",
+    "eslint": "~9.39.4",
+    "neostandard": "^0.13.0"
   },
   "pnpm": {
     "overrides": {
@@ -49,13 +43,15 @@
       "hasown": "npm:@nolyfill/hasown@^1",
       "is-core-module": "npm:@nolyfill/is-core-module@^1",
       "isarray": "npm:@nolyfill/isarray@^1",
+      "object-keys": "npm:@nolyfill/object-keys@^1",
       "object.assign": "npm:@nolyfill/object.assign@^1",
       "object.entries": "npm:@nolyfill/object.entries@^1",
       "object.fromentries": "npm:@nolyfill/object.fromentries@^1",
       "object.values": "npm:@nolyfill/object.values@^1",
       "safe-buffer": "npm:@nolyfill/safe-buffer@^1",
       "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@^1",
-      "string.prototype.repeat": "npm:@nolyfill/string.prototype.repeat@^1"
+      "string.prototype.repeat": "npm:@nolyfill/string.prototype.repeat@^1",
+      "typedarray": "npm:@nolyfill/typedarray@^1"
     }
   }
 }
