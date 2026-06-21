@@ -2,7 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { createWriteStream } from "node:fs";
 import { styleText } from "node:util";
 import process from "node:process";
-import archiver from "archiver";
+import { ZipArchive } from "archiver";
 import { PNG } from "pngjs";
 import mappings from "./mappings.ts";
 import themes from "./themes.ts";
@@ -55,7 +55,8 @@ function generateBackground({ name, constants }: Theme): Promise<void> {
 function buildTheme({ name }: Theme) {
   const filename = name.toLowerCase();
   return new Promise((resolve, reject) => {
-    const archive = archiver("zip");
+    const archive = new ZipArchive();
+    const FIXED_DATE = new Date(0);
     archive.on("warning", (err) => console.log(err));
     archive.on("error", (err) => reject(err));
 
@@ -65,11 +66,11 @@ function buildTheme({ name }: Theme) {
     archive.pipe(output);
     archive.file(
       `./src/palettes/vanilla-dark_${filename}.tdesktop-palette`,
-      { name: "colors.tdesktop-palette", date: new Date(0) }
+      { name: "colors.tdesktop-palette", date: FIXED_DATE }
     );
     archive.file(
       `./src/backgrounds/${filename}.png`,
-      { name: "background.png", date: new Date(0) }
+      { name: "background.png", date: FIXED_DATE }
     );
     archive.finalize();
   });

@@ -1,0 +1,5 @@
+enginesNode: true
+format: repo
+reject:
+  - pnpm
+  - eslint # https://github.com/neostandard/neostandard/issues/350
