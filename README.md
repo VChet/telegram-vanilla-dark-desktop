@@ -33,6 +33,11 @@
   </a>
 </div>
 
+## Telegram Export
+
+The same themes are also available for Telegram exported chats:
+[Telegram Export Dark][export-url]
+
 ## Development
 
 1. [Fork][fork-url] and download this repository
@@ -54,4 +59,5 @@
 [build-img]: https://img.shields.io/github/actions/workflow/status/VChet/telegram-vanilla-dark-desktop/.github/workflows/build.yaml?style=flat-square
 [prs-welcome-img]: https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square
 <!-- Links -->
+[export-url]: https://github.com/VChet/telegram-export-dark
 [fork-url]: https://github.com/VChet/telegram-vanilla-dark-desktop/fork
