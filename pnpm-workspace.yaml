@@ -1,0 +1,7 @@
+minimumReleaseAge: 0
+shellEmulator: true
+trustPolicy: no-downgrade
+packages: [.]
+overrides:
+  isarray: "npm:@nolyfill/isarray@^1"
+  safe-buffer: "npm:@nolyfill/safe-buffer@^1"
