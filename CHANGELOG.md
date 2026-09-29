@@ -4,5 +4,4 @@ All notable changes to this project will be documented in this file. See [commit
 
 ## 2.0.1 (2026-02-04)
 
-
 * No significant changes
