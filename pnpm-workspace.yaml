@@ -1,0 +1,13 @@
+minimumReleaseAge: 0
+minimumReleaseAgeExcludePrune: true
+
+pmOnFail: ignore
+trustPolicy: no-downgrade
+
+ignoreScripts: true
+shellEmulator: true
+packages: [.]
+
+overrides:
+  isarray: "npm:@nolyfill/isarray@^1"
+  safe-buffer: "npm:@nolyfill/safe-buffer@^1"

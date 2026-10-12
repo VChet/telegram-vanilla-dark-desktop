@@ -1,0 +1,4 @@
+enginesNode: true
+format: repo
+reject:
+  - typescript

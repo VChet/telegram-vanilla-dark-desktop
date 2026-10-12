@@ -8,7 +8,7 @@ module.exports = {
     { filename: "src/palettes/vanilla-dark_rose.tdesktop-palette", updater: "src/meta-updater.js" }
   ],
   scripts: {
-    prerelease: "npm run lint:all && npm run build && git add src/themes/*.tdesktop-theme"
+    prerelease: "node --run lint:all && node --run build && git add src/themes/*.tdesktop-theme"
   },
   writerOpts: {
     finalizeContext(context) {

@@ -2,7 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { createWriteStream } from "node:fs";
 import { styleText } from "node:util";
 import process from "node:process";
-import archiver from "archiver";
+import { ZipArchive } from "archiver";
 import { PNG } from "pngjs";
 import mappings from "./mappings.ts";
 import themes from "./themes.ts";
@@ -55,9 +55,10 @@ function generateBackground({ name, constants }: Theme): Promise<void> {
 function buildTheme({ name }: Theme) {
   const filename = name.toLowerCase();
   return new Promise((resolve, reject) => {
-    const archive = archiver("zip");
-    archive.on("warning", (err) => console.log(err));
-    archive.on("error", (err) => reject(err));
+    const archive = new ZipArchive();
+    const FIXED_DATE = new Date(0);
+    archive.on("warning", (error) => console.error(error));
+    archive.on("error", (error) => reject(error));
 
     const output = createWriteStream(`./src/themes/${filename}.tdesktop-theme`);
     output.on("close", () => resolve(`${filename}.tdesktop-theme: ${archive.pointer()} bytes`));
@@ -65,11 +66,11 @@ function buildTheme({ name }: Theme) {
     archive.pipe(output);
     archive.file(
       `./src/palettes/vanilla-dark_${filename}.tdesktop-palette`,
-      { name: "colors.tdesktop-palette", date: new Date(0) }
+      { name: "colors.tdesktop-palette", date: FIXED_DATE }
     );
     archive.file(
       `./src/backgrounds/${filename}.png`,
-      { name: "background.png", date: new Date(0) }
+      { name: "background.png", date: FIXED_DATE }
     );
     archive.finalize();
   });
@@ -80,26 +81,26 @@ async function main() {
   const availableThemes = themes.map((theme) => theme.name).join(", ");
 
   if (!themeInput) {
-    console.log(styleText("red", "Aborting: theme name not specified."));
-    console.log(styleText("yellow", `Available themes: ${availableThemes}`));
+    console.warn(styleText("red", "Aborting: theme name not specified."));
+    console.info(styleText("yellow", `Available themes: ${availableThemes}`));
     process.exit();
   }
 
   if (themeInput === "all") {
-    await Promise.all(themes.map(async(theme) => {
+    await Promise.all(themes.map(async (theme) => {
       await Promise.all([generatePalette(theme), generateBackground(theme)]);
       await buildTheme(theme);
     }));
-    console.log(styleText("green", "Generation finished!"));
+    console.info(styleText("green", "Generation finished!"));
   } else {
     const themeData = themes.find((theme) => theme.name.toLowerCase() === themeInput.toLowerCase());
     if (themeData) {
       await Promise.all([generatePalette(themeData), generateBackground(themeData)]);
       await buildTheme(themeData);
-      console.log(styleText("green", "Generation finished!"));
+      console.info(styleText("green", "Generation finished!"));
     } else {
-      console.log(styleText("red", "Aborting: incorrect theme name."));
-      console.log(styleText("yellow", `Available themes: ${availableThemes}`));
+      console.warn(styleText("red", "Aborting: incorrect theme name."));
+      console.info(styleText("yellow", `Available themes: ${availableThemes}`));
     }
   }
 }
